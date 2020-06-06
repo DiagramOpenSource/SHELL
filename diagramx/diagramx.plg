@@ -1,0 +1,93 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: diagramx - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\DOCUME~1\ADMINI~1\CONFIG~1\Temp\RSP82.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\paintlib\paintlib\win\paintlib\src" /I "..\paintlib\paintlib\win\paintlib" /I "..\paintlib\paintlib\common" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "FGVDOS" /D "FGVWIN" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\fgv_10\proyectos\diagramx\DsTabCtrl.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\CONFIG~1\Temp\RSP82.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\CONFIG~1\Temp\RSP83.tmp" with contents
+[
+..\paintlib\lib\Debug\paintlib.lib ..\paintlib\lib\Debug\libjpeg.lib version.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/diagramx.pdb" /debug /machine:I386 /out:"Debug/diagramx.exe" /pdbtype:sept 
+.\Debug\ComboNavega.obj
+.\Debug\diagramx.obj
+.\Debug\DialogBuscaMenu.obj
+.\Debug\DlgBrowse.obj
+.\Debug\DlgCambiaClave.obj
+.\Debug\DlgCambiaPasswd.obj
+.\Debug\DlgCol.obj
+.\Debug\DlgCPasswd.obj
+.\Debug\DlgErrorFichero.obj
+.\Debug\DlgExporta.obj
+.\Debug\DlgGridFiltro.obj
+.\Debug\DlgGridRellena.obj
+.\Debug\DlgIndexado.obj
+.\Debug\DlgKActiva.obj
+.\Debug\DlgMata.obj
+.\Debug\DlgNewRela.obj
+.\Debug\DlgOldImpre.obj
+.\Debug\DlgPregunta.obj
+.\Debug\DlgProgreso.obj
+.\Debug\DlgSoporte.obj
+.\Debug\DlgUsuarios.obj
+.\Debug\DrawButton.obj
+.\Debug\Ds9Window.obj
+.\Debug\DsButton.obj
+.\Debug\DsCombo.obj
+.\Debug\DsCtrlScroll.obj
+.\Debug\DsEdit.obj
+.\Debug\DsExcel.obj
+.\Debug\DsGridButton.obj
+.\Debug\DsHtml.obj
+.\Debug\DsImagen.obj
+.\Debug\DsListBox.obj
+.\Debug\DsPopup.obj
+.\Debug\DsStdDlg.obj
+.\Debug\DsTab9.obj
+.\Debug\DsTabCtrl.obj
+.\Debug\DsTextEdit.obj
+.\Debug\DsToolBarCtrl.obj
+.\Debug\DsTreeMenu.obj
+.\Debug\DsWord.obj
+.\Debug\DsxCntrItem.obj
+.\Debug\DsxDoc.obj
+.\Debug\DsxIpFrame.obj
+.\Debug\DsxLeftView.obj
+.\Debug\DsxMainFrm.obj
+.\Debug\DsxSrvrItem.obj
+.\Debug\dsxView.obj
+.\Debug\EnviaCorreo.obj
+.\Debug\GridListCtrl1.obj
+.\Debug\ListEdit.obj
+.\Debug\llama_a_ds_winsys.obj
+.\Debug\LoginDialog.obj
+.\Debug\MenuBar.obj
+.\Debug\Pantalla.obj
+.\Debug\SplitterBar.obj
+.\Debug\StaticLabel.obj
+.\Debug\StdAfx.obj
+.\Debug\Subclass.obj
+.\Debug\TablaView.obj
+.\Debug\Trasmite.obj
+.\Debug\WTraza.obj
+.\Debug\diagramx.res
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\CONFIG~1\Temp\RSP83.tmp"
+<h3>Output Window</h3>
+Compiling...
+DsTabCtrl.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+diagramx.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

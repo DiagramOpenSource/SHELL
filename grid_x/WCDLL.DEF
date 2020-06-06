@@ -1,0 +1,37 @@
+LIBRARY   WCDLL
+EXETYPE   WINDOWS
+DESCRIPTION 'Release DLL version of the WorldCom MFC library'
+CODE      PRELOAD MOVEABLE DISCARDABLE
+DATA      PRELOAD MOVEABLE SINGLE
+HEAPSIZE  1024
+EXPORTS
+          WEP PRIVATE
+; To implement your own Windows Exit Procedure add the following
+; function to your application (referring to it in the .def file is
+; not required.)  The extern "C" is only required if module is C++.
+; extern "C" int FAR PASCAL _WEP(int)
+; {
+;       /* Your WEP functionality goes here */
+;  return 1;
+; }
+
+??0WCColorPage@@REC@XZ @5
+??0WCFontPage@@REC@PFUtagLOGFONT@@@Z @6
+??0CColorButton@@REC@K@Z @7
+??1CColorButton@@VEC@XZ @8
+?RegisterClass@CBaseGrid@@TAXXZ @9
+??1CBaseGrid@@VEC@XZ @10
+?Create@CBaseGrid@@RECHAFUtagRECT@@PEVCWnd@@IPEUCCreateContext@@K@Z @11
+?GetEditText@CBaseGrid@@NECXHHAFVCString@@@Z @12
+?GetSuperWndProcAddr@CBaseGrid@@FECPEP7CJPBUHWND__@@IIJ@ZXZ @13
+?messageMap@CBaseGrid@@1UAFX_MSGMAP@@A @14
+?StartEdit@CBaseGrid@@NECXXZ @15 
+?StopEdit@CBaseGrid@@NECXH@Z @16
+?SetRowCount@CCellGrid@@RECXH@Z @17
+?SetColCount@CCellGrid@@RECXH@Z @18
+?DrawEditText@CBaseGrid@@NECXXZ @19
+?SetEditText@CBaseGrid@@NEC?EVCString@@HH@Z @20
+?GetCellExtent@CBaseGrid@@NEC?EVCSize@@HHPEVCDC@@@Z @21
+??0CBaseGrid@@REC@HHHH@Z @22
+?SetRowCount@CBaseGrid@@RECXH@Z @23
+?SetColCount@CBaseGrid@@RECXH@Z @24

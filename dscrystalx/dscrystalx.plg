@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dscrystalx - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40a /fo"Debug/dscrystalx.res" /d "_DEBUG" "C:\fgv_10\proyectos\dscrystalx\dscrystalx.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP92B.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/dscrystalx.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"C:\fgv_10\proyectos\dscrystalx\dscrystalx.cpp"
+"C:\fgv_10\proyectos\dscrystalx\dscrystalxDlg.cpp"
+"C:\fgv_10\proyectos\dscrystalx\crdesignerctrl.cpp"
+"C:\fgv_10\proyectos\dscrystalx\crvtrackcursorinfo.cpp"
+"C:\fgv_10\proyectos\dscrystalx\crystalreportviewer4.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP92B.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP92C.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/dscrystalx.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ   /c 
+"C:\fgv_10\proyectos\dscrystalx\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP92C.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP92D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/dscrystalx.pdb" /debug /machine:I386 /out:"Debug/dscrystalx.exe" /pdbtype:sept 
+.\Debug\dscrystalx.obj
+.\Debug\dscrystalxDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\dscrystalx.res
+.\Debug\crdesignerctrl.obj
+.\Debug\crvtrackcursorinfo.obj
+.\Debug\crystalreportviewer4.obj
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~2\LOCALS~1\Temp\RSP92D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+dscrystalx.cpp
+dscrystalxDlg.cpp
+crdesignerctrl.cpp
+crvtrackcursorinfo.cpp
+crystalreportviewer4.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+dscrystalx.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

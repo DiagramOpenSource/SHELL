@@ -1,0 +1,192 @@
+//Microsoft App Studio generated resource script.
+//
+
+// wcmfcres.rc
+
+/*-----------------------------------------------------------------------------
+//
+//      Disclaimer
+//
+//      You may freely copy, distribute and reuse this software and its
+//      associated documentation. WorldCom Network Services, Inc.
+//      disclaims any warranty of any kind, expressed or implied, as to its
+//      fitness for any particular use, and cannot be held liable for any
+//      damages as the result of its use.
+//
+-----------------------------------------------------------------------------*/
+
+// Written by: Joe Willcoxson
+// Date:  		20 Nov 1995
+// Version:		1.00
+
+// NOTE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// Include this file into your project resource file if you
+// use the WCColorPage or WCFontPage classes!!!
+
+#include "wcmfcres.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WC_COLORPAGE DIALOG DISCARDABLE  0, 0, 161, 126
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Color"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_BUTTON1,"Button",BS_OWNERDRAW | WS_TABSTOP,6,6,16,
+                    9
+    CONTROL         "",IDC_BUTTON2,"Button",BS_OWNERDRAW | WS_TABSTOP,25,6,
+                    16,9
+    CONTROL         "",IDC_BUTTON3,"Button",BS_OWNERDRAW | WS_TABSTOP,44,6,
+                    16,9
+    CONTROL         "",IDC_BUTTON4,"Button",BS_OWNERDRAW | WS_TABSTOP,63,6,
+                    16,9
+    CONTROL         "",IDC_BUTTON5,"Button",BS_OWNERDRAW | WS_TABSTOP,6,17,
+                    16,9
+    CONTROL         "",IDC_BUTTON6,"Button",BS_OWNERDRAW | WS_TABSTOP,25,17,
+                    16,9
+    CONTROL         "",IDC_BUTTON7,"Button",BS_OWNERDRAW | WS_TABSTOP,44,17,
+                    16,9
+    CONTROL         "",IDC_BUTTON8,"Button",BS_OWNERDRAW | WS_TABSTOP,63,17,
+                    16,9
+    CONTROL         "",IDC_BUTTON9,"Button",BS_OWNERDRAW | WS_TABSTOP,6,29,
+                    16,9
+    CONTROL         "",IDC_BUTTON10,"Button",BS_OWNERDRAW | WS_TABSTOP,25,29,
+                    16,9
+    CONTROL         "",IDC_BUTTON11,"Button",BS_OWNERDRAW | WS_TABSTOP,44,29,
+                    16,9
+    CONTROL         "",IDC_BUTTON12,"Button",BS_OWNERDRAW | WS_TABSTOP,63,29,
+                    16,9
+    CONTROL         "",IDC_BUTTON13,"Button",BS_OWNERDRAW | WS_TABSTOP,6,41,
+                    16,9
+    CONTROL         "",IDC_BUTTON14,"Button",BS_OWNERDRAW | WS_TABSTOP,25,41,
+                    16,9
+    CONTROL         "",IDC_BUTTON15,"Button",BS_OWNERDRAW | WS_TABSTOP,44,41,
+                    16,9
+    CONTROL         "",IDC_BUTTON16,"Button",BS_OWNERDRAW | WS_TABSTOP,63,41,
+                    16,9
+    CONTROL         "Sample",IDC_SAMPLE,"Button",BS_OWNERDRAW | WS_DISABLED,
+                    91,14,63,31
+    SCROLLBAR       IDC_REDBAR,39,69,76,11
+    SCROLLBAR       IDC_GREENBAR,39,86,76,11
+    SCROLLBAR       IDC_BLUEBAR,39,102,76,11
+    LTEXT           "Red:",IDC_STATIC,11,71,22,8
+    LTEXT           "Green:",IDC_STATIC,11,88,22,8
+    LTEXT           "Blue:",IDC_STATIC,11,104,22,8
+    GROUPBOX        "Manual",IDC_STATIC,8,57,115,63
+    GROUPBOX        "Sample",IDC_STATIC,87,3,69,45
+END
+
+IDD_WC_FONTPAGE DIALOG DISCARDABLE  0, 0, 228, 147
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Font"
+FONT 8, "Helv"
+BEGIN
+    COMBOBOX        IDC_FP_FONTLIST,3,15,98,52,CBS_SIMPLE | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FP_STYLELIST,106,15,60,52,CBS_SIMPLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Font:",IDC_STATIC,3,5,30,8
+    LTEXT           "Font St&yle:",IDC_STATIC,107,5,49,8
+    COMBOBOX        IDC_FP_SIZE,174,14,39,52,CBS_SIMPLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&Size:",IDC_STATIC,174,5,30,8
+    CONTROL         "Strikeout",IDC_FP_STRIKEOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,85,49,10
+    CONTROL         "Underline",IDC_FP_UNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,96,49,10
+    GROUPBOX        "Effect",IDC_STATIC,3,74,85,34
+    CTEXT           "CcJj",IDC_FP_SAMPLE,100,86,115,37
+    GROUPBOX        "Sample",IDC_STATIC,96,72,124,56
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WC_FONTPAGE DLGINIT
+BEGIN
+    1002, 0x403, 2, 0
+0x0038, 
+    1002, 0x403, 3, 0
+0x3031, "\000" 
+    1002, 0x403, 3, 0
+0x3231, "\000" 
+    1002, 0x403, 3, 0
+0x3431, "\000" 
+    1002, 0x403, 3, 0
+0x3631, "\000" 
+    1002, 0x403, 3, 0
+0x3032, "\000" 
+    1002, 0x403, 3, 0
+0x3432, "\000" 
+    1002, 0x403, 3, 0
+0x3832, "\000" 
+    1002, 0x403, 3, 0
+0x3233, "\000" 
+    1002, 0x403, 3, 0
+0x3633, "\000" 
+    1002, 0x403, 3, 0
+0x3034, "\000" 
+    1002, 0x403, 3, 0
+0x3434, "\000" 
+    1002, 0x403, 3, 0
+0x3834, "\000" 
+    1002, 0x403, 3, 0
+0x3237, "\000" 
+    0
+END
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "wcmfcres.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

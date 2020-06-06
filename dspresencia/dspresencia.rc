@@ -1,0 +1,348 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+WXDISABLE_BUTTON_BITMAP BITMAP  MOVEABLE PURE   "wx/msw/disable.bmp"
+WXBITMAP_STD_COLOURS    BITMAP  MOVEABLE PURE   "wx/msw/colours.bmp"
+TICK_BMP                BITMAP  MOVEABLE PURE   "wx/msw/tick.bmp"
+PLOT_ZOT_BMP            BITMAP  MOVEABLE PURE   "wx/msw/plot_zot.bmp"
+PLOT_ZIN_BMP            BITMAP  MOVEABLE PURE   "wx/msw/plot_zin.bmp"
+PLOT_UP_BMP             BITMAP  MOVEABLE PURE   "wx/msw/plot_up.bmp"
+PLOT_SHR_BMP            BITMAP  MOVEABLE PURE   "wx/msw/plot_shr.bmp"
+PLOT_ENL_BMP            BITMAP  MOVEABLE PURE   "wx/msw/plot_enl.bmp"
+PLOT_DWN_BMP            BITMAP  MOVEABLE PURE   "wx/msw/plot_dwn.bmp"
+CROSS_BMP               BITMAP  MOVEABLE PURE   "wx/msw/cross.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+WXCURSOR_WATCH          CURSOR  DISCARDABLE     "wx\\msw\\watch1.cur"
+WXCURSOR_SIZING         CURSOR  DISCARDABLE     "wx/msw/size.cur"
+WXCURSOR_ROLLER         CURSOR  DISCARDABLE     "wx/msw/roller.cur"
+WXCURSOR_QARROW         CURSOR  DISCARDABLE     "wx/msw/query.cur"
+WXCURSOR_PRIGHT         CURSOR  DISCARDABLE     "wx/msw/pntright.cur"
+WXCURSOR_PLEFT          CURSOR  DISCARDABLE     "wx/msw/pntleft.cur"
+WXCURSOR_PENCIL         CURSOR  DISCARDABLE     "wx/msw/pencil.cur"
+WXCURSOR_PBRUSH         CURSOR  DISCARDABLE     "wx/msw/pbrush.cur"
+WXCURSOR_NO_ENTRY       CURSOR  DISCARDABLE     "wx/msw/noentry.cur"
+WXCURSOR_MAGNIFIER      CURSOR  DISCARDABLE     "wx/msw/magnif1.cur"
+WXCURSOR_HAND           CURSOR  DISCARDABLE     "wx/msw/hand.cur"
+WXCURSOR_BULLSEYE       CURSOR  DISCARDABLE     "wx/msw/bullseye.cur"
+WXCURSOR_BLANK          CURSOR  DISCARDABLE     "wx/msw/blank.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+WXICON_WARNING          ICON    DISCARDABLE     "wx\\msw\\warning.ico"
+WXICON_TIP              ICON    DISCARDABLE     "wx/msw/tip.ico"
+WXICON_QUESTION         ICON    DISCARDABLE     "wx/msw/question.ico"
+WXICON_INFO             ICON    DISCARDABLE     "wx/msw/info.ico"
+WXICON_ERROR            ICON    DISCARDABLE     "wx/msw/error.ico"
+WXRESIZEABLEDIALOG      ICON    DISCARDABLE     "wx/msw/wxresize.ico"
+DSPRESENCIA             ICON    DISCARDABLE     "dspresencia.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "wx/msw/bitmap1.bmp"
+BMPNULO                 BITMAP  DISCARDABLE     "wx/msw/bitmap2.bmp"
+BMPCOMICO               BITMAP  DISCARDABLE     "wx/msw/bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICONAUSENTE         ICON    DISCARDABLE     "wx/msw/icon1.ico"
+ICON1                   ICON    DISCARDABLE     "wx/msw/ico00003.ico"
+ICON2                   ICON    DISCARDABLE     "wx/msw/icon2.ico"
+ICON3                   ICON    DISCARDABLE     "wx/msw/icon3.ico"
+ICON4                   ICON    DISCARDABLE     "wx/msw/icon4.ico"
+IDI_ICONPRESENTE        ICON    DISCARDABLE     "wx/msw/iconpres.ico"
+IDI_ICONINACTIVO        ICON    DISCARDABLE     "wx/msw/iconinac.ico"
+ICON5                   ICON    DISCARDABLE     "wx/msw/icon5.ico"
+ICON6                   ICON    DISCARDABLE     "wx/msw/icon6.ico"
+ICON7                   ICON    DISCARDABLE     "wx/msw/icon7.ico"
+ICON8                   ICON    DISCARDABLE     "wx/msw/icon8.ico"
+ICON9                   ICON    DISCARDABLE     "wx/msw/icon9.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+WRING                   WAVE    MOVEABLE PURE   "ringout.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+WXRESIZEABLEDIALOG DIALOG DISCARDABLE  34, 22, 212, 169
+STYLE WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_THICKFRAME
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+WXNOCAPTIONDIALOG DIALOG DISCARDABLE  34, 22, 144, 75
+STYLE WS_POPUP
+BEGIN
+END
+
+WXCAPTIONDIALOG DIALOG DISCARDABLE  34, 22, 218, 190
+STYLE DS_SETFOREGROUND | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Presencia"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PARTE DIALOG DISCARDABLE  0, 0, 337, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,20,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,20,70,50,14
+    COMBOBOX        IDC_COMBO1,5,15,55,70,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,150,15,175,85,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,70,15,40,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Button1",IDC_BUTTON1,115,15,25,15
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 315, 236
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,210,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,210,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,0,315,195
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+WXWINDOWMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    4002
+        MENUITEM "Tile &Horizontally",          4001
+        MENUITEM "Tile &Vertically",            4005
+        MENUITEM "",                            65535
+        MENUITEM "&Arrange Icons",              4003
+        MENUITEM "&Next",                       4004
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "WXRESIZEABLEDIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 154
+        BOTTOMMARGIN, 93
+    END
+
+    "WXCAPTIONDIALOG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 50
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_PARTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 330
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PARTE DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 8, 0
+0x6c43, 0x6569, 0x746e, 0x0065, 
+    IDC_COMBO1, 0x403, 11, 0
+0x7250, 0x7365, 0x7570, 0x7365, 0x6f74, "\000" 
+    0
+END
+
+#endif    // Spanish (Castilian) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+LLAMADA                 BITMAP  DISCARDABLE     "wx/msw/bmp00002.bmp"
+SLEEPING                BITMAP  DISCARDABLE     "wx/msw/sleeping.bmp"
+OCULTO                  BITMAP  DISCARDABLE     "wx/msw/oculto.bmp"
+CONFAMO                 BITMAP  DISCARDABLE     "wx/msw/confamo.bmp"
+ENCONF                  BITMAP  DISCARDABLE     "wx/msw/enconf.bmp"
+ROOT                    BITMAP  DISCARDABLE     "wx/msw/bmp00003.bmp"
+ITEM                    BITMAP  DISCARDABLE     "wx/msw/item.bmp"
+ADADE                   BITMAP  DISCARDABLE     "wx/msw/root.bmp"
+OTP                     BITMAP  DISCARDABLE     "wx/msw/bmp00004.bmp"
+TEATIENDEN              BITMAP  DISCARDABLE     "wx/msw/teatiend.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "wx/msw/ico00001.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DLL
+//
+
+IDR_HOOK                DLL     DISCARDABLE     "c:\\hook\\keydll3\\release\\ds_k_int.dll"
+IDR_TEATIENDEN          DLL     DISCARDABLE     "wx/msw/dll1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BIN
+//
+
+WINDSTVNC.EXE           BIN     DISCARDABLE     "res\\WinDStvnc.exe.tmp"
+OMNITHREAD_RT.DLL       BIN     DISCARDABLE     "res\\omnithread_rt.dll.tmp"
+VNCHOOKS.DLL            BIN     DISCARDABLE     "res\\VNCHooks.dll.tmp"
+ZLIB.DLL                BIN     DISCARDABLE     "res\\zlib.dll.tmp"
+DSTVNCVW.EXE            BIN     DISCARDABLE     "res\\dstvncvw.exe.tmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+IDR_MANIFEST            24      MOVEABLE PURE   "wx/msw/idxml.bin"
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

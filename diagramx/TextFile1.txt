@@ -1,0 +1,244 @@
+					menu.InsertMenu(0,MF_STRING | MF_BYPOSITION,1,"Ordenar");
+					menu.InsertMenu(1,MF_STRING | MF_BYPOSITION,2,"Buscar");
+					menu.InsertMenu(2,MF_STRING | MF_BYPOSITION,3,"Operaciones");
+					menu.InsertMenu(3,MF_SEPARATOR | MF_BYPOSITION,-1,(LPCSTR)NULL);    
+					menu.InsertMenu(5,MF_STRING | MF_BYPOSITION | MF_POPUP,(int)filtros.m_hMenu,"Filtro avanzado");					
+					{
+						CDlgGridFiltro dlg(this);
+						filtros.InsertMenu(0,MF_STRING | MF_BYPOSITION,ID_CONSULTA_FILTRO,"Mantenimiento");		
+						dlg.RellenaMenu(&filtros,1,100000);
+					}
+					menu.InsertMenu(5,MF_SEPARATOR | MF_BYPOSITION,-1,(LPCSTR)NULL);    
+					menu.InsertMenu(6,MF_STRING | MF_BYPOSITION,ID_GRID_RESTAURA,"Restaurar predeterminados");
+					menu.InsertMenu(7,MF_STRING | MF_BYPOSITION,ID_CONSULTA_TODACOLUMNAS,"Ver todas las columnas");
+					menu.InsertMenu(8,MF_SEPARATOR | MF_BYPOSITION,-1,(LPCSTR)NULL);    
+					menu.InsertMenu(9,MF_STRING | MF_BYPOSITION,7,"Borrar Columna");
+					menu.InsertMenu(10,MF_STRING | MF_BYPOSITION,8,"Borrar Columnas Hasta el Final");
+					menu.InsertMenu(11,MF_STRING | MF_BYPOSITION,9,"Cuadro de Seleccion");
+
+
+
+				if (r == ID_CONSULTA_TODACOLUMNAS)
+				{
+					m_curcol = 0;
+					BorraCache();
+					m_def->CreaCamcolu(TRUE,TRUE);
+					EnviaCamcolu();
+					CreaColumnas();
+					InvalidateRect(NULL);
+					GuardaPosiciones();
+				}
+				else if (r == ID_GRID_RESTAURA)
+				{
+					if (AfxMessageBox("¿Seguro que desea Restaurar predeterminados?",MB_YESNO | MB_ICONQUESTION) == IDYES)
+					{
+						m_curcol = 0;
+						BorraCache();
+						m_def->CreaCamcolu(TRUE);
+						EnviaCamcolu();
+						CreaColumnas();
+						InvalidateRect(NULL);
+						GuardaPosiciones();
+					}
+				}
+				else if (r == 1)
+				{
+					CDlgOrdenar dlg(this);
+					dlg.m_col = nCol;
+					if (dlg.DoModal() == IDOK)
+					{
+						CDlgGridFiltro dlgf(this);
+						CString s;
+						int j;
+						for (int i = 0;i < m_def->m_n_campos_col;i++)
+						{
+							j = m_def->m_colcampos[i];
+							dlgf.m_principal->m_item[j]->m_checked = TRUE;
+						}
+						if (dlg.m_sel1 > -1)
+						{
+							dlgf.m_principal->m_item[dlg.m_sel1]->m_Orden = TRUE;
+							dlgf.m_principal->m_item[dlg.m_sel1]->m_OrdenInverso = dlg.m_inver1;
+							s.Format("%s[%d]",dlgf.m_principal->m_item[dlg.m_sel1]->m_padre->m_nombre,dlg.m_sel1);
+							//dlgf.m_ordenid[0] = s;
+						}
+						if (dlg.m_sel2 > -1)
+						{
+							dlgf.m_principal->m_item[dlg.m_sel2]->m_Orden = TRUE;
+							dlgf.m_principal->m_item[dlg.m_sel2]->m_OrdenInverso = dlg.m_inver2;
+							s.Format("%s[%d]",dlgf.m_principal->m_item[dlg.m_sel2]->m_padre->m_nombre,dlg.m_sel2);
+							//dlgf.m_ordenid[1] = s;
+						}
+						if (dlg.m_sel3 > -1)
+						{
+							dlgf.m_principal->m_item[dlg.m_sel3]->m_Orden = TRUE;
+							dlgf.m_principal->m_item[dlg.m_sel3]->m_OrdenInverso = dlg.m_inver3;
+							s.Format("%s[%d]",dlgf.m_principal->m_item[dlg.m_sel3]->m_padre->m_nombre,dlg.m_sel3);
+							//dlgf.m_ordenid[2] = s;
+						}
+						
+						dlgf.RellenaListado(TRUE);
+						EjecutaFiltro(&dlgf);
+					}
+				}
+				else if (r == 2)
+				{
+					CDlgBusqueda dlg(this);
+					dlg.m_col = nCol;
+					if (dlg.DoModal() == IDOK)
+					{
+						CDlgGridFiltro dlgf(this);
+						CString s;
+						int j;
+						for (int i = 0;i < m_def->m_n_campos_col;i++)
+						{
+							j = m_def->m_colcampos[i];
+							dlgf.m_principal->m_item[j]->m_checked = TRUE;
+						}
+						if (dlg.m_sel > -1)
+						{
+							dlgf.m_principal->m_item[dlg.m_sel]->m_Orden = TRUE;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_LimiteI = dlg.m_limitei;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_LimiteS = dlg.m_limites;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_Valor = dlg.m_valor;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_TipoValor= dlg.m_tipovalor;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_Mayus = dlg.m_mayus;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_Inver = dlg.m_inversa;
+
+							s.Format("%s[%d]",dlgf.m_principal->m_item[dlg.m_sel]->m_padre->m_nombre,dlg.m_sel);
+							//dlgf.m_ordenid[0] = s;
+						}						
+						dlgf.RellenaListado(TRUE);
+						EjecutaFiltro(&dlgf);
+					}					
+				}
+				else if (r == 3)
+				{
+					CDlgOperaciones dlg(this);
+					dlg.m_col = nCol;
+					if (dlg.DoModal() == IDOK)
+					{
+						CDlgGridFiltro dlgf(this);
+						CString s;
+						int j;
+						for (int i = 0;i < m_def->m_n_campos_col;i++)
+						{
+							j = m_def->m_colcampos[i];
+							dlgf.m_principal->m_item[j]->m_checked = TRUE;
+						}
+						if (dlg.m_sel > -1)
+						{
+							dlgf.m_principal->m_item[dlg.m_sel]->m_Orden = TRUE;
+							dlgf.m_principal->m_item[dlg.m_sel]->m_opera = dlg.m_opera;
+
+							s.Format("%s[%d]",dlgf.m_principal->m_item[dlg.m_sel]->m_padre->m_nombre,dlg.m_sel);
+							//dlgf.m_ordenid[0] = s;
+						}						
+						dlgf.RellenaListado(TRUE);
+						EjecutaFiltro(&dlgf);
+					}					
+				}
+				else if (r == 9)
+				{
+						CDlgCol dlg(this);
+						if (dlg.DoModal() == IDOK)
+						{
+							EnviaCamcolu();
+							CreaColumnas();
+							InvalidateRect(NULL);
+							GuardaPosiciones();
+						}
+				}            
+				else if (r == ID_CONSULTA_FILTRO)
+				{
+					Filtros();
+				} 
+				else if (r >= 100000)
+				{		
+					CDlgGridFiltro dlg(this);
+					if (r >= 101000)		
+						dlg.m_registrolocal = FALSE;		
+					else
+						dlg.m_registrolocal = TRUE;
+					filtros.GetMenuString( r,dlg.m_nombre,MF_BYCOMMAND);
+					if (dlg.LeeDelRegistro())
+					{
+						dlg.RellenaListado(TRUE);
+						EjecutaFiltro(&dlg);
+					}
+					else
+					{
+						AfxMessageBox("Filtro erroneo, acceda a la opción de Mantenimiento");
+					}
+				}
+				else if (nCol >= COLUMNA_INICIAL && nCol < (m_columnas-COLUMNA_FINAL))
+				{
+					if (r >= 7 && r <= 8)
+					{
+						if ( (m_columnas -COLUMNA_FINAL-COLUMNA_INICIAL) < 2)
+							return TRUE;
+
+						LVCOLUMN colum;
+						BorraCache();
+						int _nCol;
+						int nLimi = nCol;
+
+						if (r == 8)
+						{
+							_nCol = m_columnas - 2;
+						}
+						else
+						{
+							_nCol = nCol;
+						}
+
+						for (nCol = _nCol;nCol >= nLimi;nCol--)
+						{
+							int i;
+							DeleteColumn( nCol );
+							m_columnas--;                						
+							for (i = 0;i < m_columnas;i++)
+							{
+								memset((void *)&colum,0,sizeof(colum));
+								colum.mask = LVCF_ORDER | LVCF_SUBITEM;
+								colum.iSubItem = i;
+								colum.iOrder = i;
+								SetColumn( i , &colum );
+							}
+							m_def->m_n_campos_col--;
+							for (i = nCol-COLUMNA_INICIAL;i < m_def->m_n_campos_col;i++)
+							{
+								m_def->m_colcampos[i] = m_def->m_colcampos[i+1];
+							}
+							m_def->m_colcampos[m_def->m_n_campos_col] = -1;
+						}
+						i = 0;
+						int offset = 0;
+						for (int col = 0;col < m_def->m_n_campos_col;col++)
+						{
+							m_poscampos[i] = offset;
+							m_tamcampos[i] = m_def->Campo(col)->c_maxqc;
+							m_flagcampos[i] = m_def->Campo(col)->c_tipo;
+							if (m_flagcampos[i] != 0 && m_flagcampos[i] != 5)
+							{
+								m_flagcampos[i] |= 16;
+							}
+							offset += m_tamcampos[i];        
+							i++;
+						}
+						m_lenreg = offset;
+						m_apintar[0] = -1;
+
+						m_sincachear++;
+						AjustaColumnaFinal();
+						EnviaCamcolu();
+						m_sincachear--;
+						//m_iniciales[0] = 
+						//m_iniciales[1] = -1;
+						m_refrespending = FALSE;
+						InvalidateRect(NULL);
+						GuardaPosiciones();
+					}
+				}
+				return TRUE;
+			}

@@ -1,0 +1,1818 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLMAINFRAME       BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLMAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      PIDO_EMPRESA
+    BUTTON      PIDO_VEREURO
+    BUTTON      ID_USERLIST
+    BUTTON      ID_MENUSER
+    BUTTON      ID_BUSCAMENU
+    SEPARATOR
+    BUTTON      ID_CONTROLREMTO
+    BUTTON      ID_ASISTENCIA
+    SEPARATOR
+    BUTTON      ID_ACTIVAR_CRISTAL
+    BUTTON      ID_ACTIVAR_ERP
+    BUTTON      ID_ACTIVAR_EVT
+    BUTTON      ID_ACTIVAR_EVTPBX
+    BUTTON      ID_ACTIVAR_EVTCRM
+    BUTTON      ID_CLAVES
+    BUTTON      ID_RELACION
+    BUTTON      ID_TOOLIR
+    BUTTON      801
+    BUTTON      807
+    SEPARATOR
+    BUTTON      ID_9FONTAUTO
+    SEPARATOR
+    BUTTON      ID_TICSCON
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Diagramx.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.esp\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#include ""l.esp\\afxolecl.rc""        // OLE container resources\r\n"
+    "#include ""l.esp\\afxolesv.rc""          // OLE server resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Castilian) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TREEFOL             BITMAP                  "res\\bmdir1.bmp"
+IDB_TREEOPEN            BITMAP                  "res\\bmdir2.bmp"
+IDB_TREEFIL             BITMAP                  "res\\bmfile1.bmp"
+IDB_TREESEL             BITMAP                  "res\\bmfile2.bmp"
+IDB_FICHA_NUEVA         BITMAP                  "res\\bmp00003.bmp"
+IDB_FICHA_MODIFICAR     BITMAP                  "res\\ficha_mo.bmp"
+IDB_FICHA_BAJA          BITMAP                  "res\\ficha_ba.bmp"
+IDB_FICHA_PRIMERA       BITMAP                  "res\\ficha_pr.bmp"
+IDB_FICHA_ANTERIOR      BITMAP                  "res\\ficha_an.bmp"
+IDB_FICHA_SIGUIENTE     BITMAP                  "res\\ficha_si.bmp"
+IDB_FICHA_ULTIMA        BITMAP                  "res\\ficha_ul.bmp"
+IDB_FICHA_BUSCAR        BITMAP                  "res\\ficha_bu.bmp"
+IDB_FICHA_IMPRIMIR      BITMAP                  "res\\ficha_im.bmp"
+IDB_FICHA_VALIDAR       BITMAP                  "res\\ficha_va.bmp"
+IDB_FICHA_CANCELAR      BITMAP                  "res\\ficha_ca.bmp"
+IDB_OTRO                BITMAP                  "res\\carpeta_.bmp"
+IDB_PUNTO_ROJO          BITMAP                  "res\\punto_ro.bmp"
+IDB_PUNTO_AMARILLO      BITMAP                  "res\\punto_am.bmp"
+IDB_PUNTO_VERDE         BITMAP                  "res\\punto_ve.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BUSMENU DIALOG  0, 0, 122, 29
+STYLE DS_SETFONT | DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TBUSCAMENU,35,8,79,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Buscar",IDOK,3,8,28,14,NOT WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,2,0,118,28,BS_CENTER
+END
+
+IDD_PROGRESO DIALOG  0, 0, 285, 34
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "CARGANDO"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESO,"msctls_progress32",WS_BORDER,0,
+                    0,285,35
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TOOLGRID MENU 
+BEGIN
+    MENUITEM "IDR_TOOLGRID",                ID_IDR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FICHA_NUEVA         ICON                    "res\\ficha_nu.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_RECORD_UPDATE        "Pulse para Modificar el Registro\nModifcar Registro"
+    ID_RECORD_NEW           "Nuevo Registro\nNuevo Registro"
+    ID_RECORD_DELETE        "Borrar Registro\nBorrar Registro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RECORD_FIRST         "Retrocede al primer registro\nPrimer registro"
+    ID_RECORD_LAST          "Avanza al último registro\nÚltimo registro"
+    ID_RECORD_NEXT          "Avanza al siguiente registro\nSiguiente registro"
+    ID_RECORD_PREV          "Retrocede al registro anterior\nRegistro anterior"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EXPORTA_EXCEL        "Enlaza Con EXcel"
+    ID_EXPORTA_WORD         "Enlaza con Word"
+    ID_CONSULTA_FILTRO      "Filtros para refinar una consulta"
+END
+
+#endif    // Spanish (Castilian) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLGRID            BITMAP                  "res\\toolbar1.bmp"
+IDR_NAVEGA              BITMAP                  "res\\bmp00002.bmp"
+IDR_TOOLMENSA           BITMAP                  "res\\toolmens.bmp"
+IDB_CLAVE               BITMAP                  "res\\clave.bmp"
+IDB_GRIDSEL             BITMAP                  "res\\gridsel.bmp"
+IDB_CONSULGRID          BITMAP                  "res\\bitmap1.bmp"
+IDB_BOTGRIDSEL          BITMAP                  "res\\bmp00001.bmp"
+IDB_BOTGRIDNUE          BITMAP                  "res\\botgridn.bmp"
+IDB_BOTGNUESEL          BITMAP                  "res\\botgnues.bmp"
+CBU                     BITMAP                  "res\\ComboTreeShow\\res\\cbu.bmp"
+CBD                     BITMAP                  "res\\ComboTreeShow\\res\\cbd.bmp"
+IDB_TICSCON             BITMAP                  "res\\bmp00004.bmp"
+IDB_TICSCON1            BITMAP                  "res\\ticscon1.bmp"
+IDB_TICSCON2            BITMAP                  "res\\ticscon2.bmp"
+IDB_DFLECHAI            BITMAP                  "res\\bmp00005.bmp"
+IDB_DFLECHAD            BITMAP                  "res\\dflechad.bmp"
+IDR_TOOLBARMENU         BITMAP                  "res\\bmp00006.bmp"
+IDB_MAIL                BITMAP                  "res\\bmp00007.bmp"
+IDR_TOOLBARMENU1        BITMAP                  "res\\toolbarm.bmp"
+IDR_TOOLMAINFRAME1      BITMAP                  "res\\toolmain.bmp"
+IDR_TOOLGRID1           BITMAP                  "res\\toolgrid.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLGRID TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_CONSULTA_FILTRO
+    BUTTON      ID_EXPORTA_EXCEL
+    BUTTON      ID_EXPORTA_WORD
+    BUTTON      ID_EXPORTA_PLB
+    BUTTON      ID_EXPORTA_XML
+END
+
+IDR_NAVEGA TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDD_MIUSERWEB
+    BUTTON      ID_HTMLNAVEGAHOME
+END
+
+IDR_TOOLMENSA TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TOOLMENSA
+    BUTTON      ID_HTMLNAVEGAHOME
+END
+
+IDR_TOOLBARMENU TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDD_TOOLBARMENU1
+    SEPARATOR
+    BUTTON      IDD_TOOLBARMENU2
+    SEPARATOR
+    BUTTON      IDD_TOOLBARMENU3
+END
+
+IDR_TOOLBARMENU1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      IDD_TOOLBARMENU1
+    SEPARATOR
+    BUTTON      IDD_TOOLBARMENU2
+    SEPARATOR
+    BUTTON      IDD_TOOLBARMENU3
+END
+
+IDR_TOOLMAINFRAME1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      PIDO_EMPRESA
+    BUTTON      PIDO_VEREURO
+    BUTTON      ID_USERLIST
+    BUTTON      ID_MENUSER
+    BUTTON      ID_BUSCAMENU
+    BUTTON      ID_CONTROLREMTO
+    SEPARATOR
+    BUTTON      ID_ACTIVAR_CRISTAL
+    BUTTON      ID_ACTIVAR_ERP
+    BUTTON      ID_ACTIVAR_EVT
+    SEPARATOR
+    BUTTON      ID_CLAVES
+    BUTTON      ID_RELACION
+    SEPARATOR
+    BUTTON      ID_TOOLIR
+    SEPARATOR
+    BUTTON      801
+    BUTTON      807
+    SEPARATOR
+    BUTTON      ID_MIAYUDA
+    SEPARATOR
+    BUTTON      ID_TICSCON
+END
+
+IDR_TOOLGRID1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_RECORD_NEW
+    BUTTON      ID_RECORD_DELETE
+    SEPARATOR
+    BUTTON      ID_RECORD_FIRST
+    BUTTON      ID_RECORD_PREV
+    BUTTON      ID_RECORD_UPDATE
+    BUTTON      ID_RECORD_NEXT
+    BUTTON      ID_RECORD_LAST
+    SEPARATOR
+    BUTTON      ID_CONSULTA_FILTRO
+    SEPARATOR
+    BUTTON      ID_EXPORTA_EXCEL
+    BUTTON      ID_EXPORTA_WORD
+    BUTTON      ID_EXPORTA_PLB
+    BUTTON      ID_EXPORTA_XML
+    BUTTON      ID_GRIDIMPRIME
+    SEPARATOR
+    BUTTON      ID_EXPORTA_RPT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EMBEDDABLE_DESIGNER_DIALOG DIALOGEX 0, 0, 542, 342
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Crystal Reports"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancelar",IDCANCEL,480,326,50,14
+    PUSHBUTTON      "&Nuevo Informe",IDC_NEW_REPORT,5,325,50,15
+    PUSHBUTTON      "&Abrir Informe",IDC_OPEN_REPORT,65,325,50,15
+    PUSHBUTTON      "&Salvar Informe",IDC_SAVE_REPORT,125,325,50,15
+    PUSHBUTTON      "&Vista Previa",IDC_PREVIEW,185,325,50,15
+    PUSHBUTTON      "&Diseño",IDC_SHOW_DESIGNER,245,325,50,15,NOT WS_VISIBLE
+    PUSHBUTTON      "Seleccionar Impresora",IDC_PRINTER,369,325,91,15
+    PUSHBUTTON      "Enviar Correo",IDC_MAPI,301,326,64,14
+    LTEXT           "Static",IDC_STATICNEUTRO,7,7,528,313
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 172, 70
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | 
+    DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY
+CAPTION "Login"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_USUARIO,40,10,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,40,30,70,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,121,10,45,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,121,30,45,14
+    LTEXT           "Usuario:",IDC_LABEL_USUARIO,5,10,33,12
+    LTEXT           "Clave:",IDC_LABEL_PASSWORD,7,31,31,11
+    PUSHBUTTON      "Cambio Clave",IDC_CAMBIO,40,48,70,15,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+IDD_KACTIVACION DIALOG  90, 60, 206, 122
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Entre su Numero de Activacion"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ACTIVACION,60,48,139,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,30,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,101,50,14
+    LTEXT           "Número DE ORO.:",IDC_STATIC,7,25,65,11
+    LTEXT           "Clave Básica:",IDC_STATIC,7,50,47,10
+    LTEXT           "IDENTIFICACION:",IDC_STATIC,7,6,58,13
+    EDITTEXT        IDC_IDENTIFICA,81,6,91,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_NUMERO,81,25,92,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "TELEFONOS PARA SOLICITAR LA ACTIVACION",IDC_STATIC,7,69,
+                    192,28
+    EDITTEXT        IDC_TELEFONOS,14,80,177,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ENTRACLAVE DIALOG  0, 0, 152, 41
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "ENTRE LA CLAVE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LACLAVE,21,10,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,95,0,50,17
+    PUSHBUTTON      "Cancelar",IDCANCEL,95,18,50,16
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 252, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de Diagram"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,5,21,20
+    LTEXT           "Runtime Diagram (38)",IDC_STATIC1,40,10,60,17,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) Diagram Software S.L, CIF:B53179768, Alcoy 1999-2008",
+                    IDC_COPYRIGHT,17,49,228,12
+    DEFPUSHBUTTON   "Aceptar",IDOK,95,100,50,14,WS_GROUP
+    LTEXT           "Static",IDC_MIVERSION,40,30,90,14
+    LTEXT           "Static",IDC_MIVERSION0,135,10,100,14
+    LTEXT           "Static",IDC_MIVERSION1,135,30,95,14
+    CTEXT           "Static",IDC_CONTROLBUILD,16,62,218,12
+    CTEXT           "Static",IDC_MACADDRESS,15,81,218,12
+END
+
+IDD_TRASMITE DIALOG  0, 0, 322, 271
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Trasmision"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TPASO,142,7,61,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Tree1",IDC_TAQUI,"SysTreeView32",WS_BORDER | WS_TABSTOP,
+                    7,25,135,197
+    CONTROL         "Tree2",IDC_TALLI,"SysTreeView32",WS_BORDER | WS_TABSTOP,
+                    181,25,134,197
+    DEFPUSHBUTTON   "Salir",IDCANCEL,142,251,39,13
+    CONTROL         "Progress1",IDC_TPROGRESS,"msctls_progress32",WS_BORDER,
+                    7,232,308,12
+    LTEXT           "PASSWORD",IDC_STATIC,95,7,47,10
+END
+
+IDD_USUARIOS DIALOGEX 0, 0, 417, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Usuarios Activos"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Salir",IDCANCEL,340,225,50,14
+    CONTROL         "List1",IDC_LISTUSERS,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,403,210
+    EDITTEXT        IDC_EDIT1,16,177,384,19,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_VISIBLE | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Enviar",IDC_BUTTON1,24,201,55,16,NOT WS_VISIBLE
+    PUSHBUTTON      "Borrar",IDC_BUTTON2,90,201,56,16,NOT WS_VISIBLE
+    GROUPBOX        "Mensaje",IDC_STATIC,7,172,403,50,NOT WS_VISIBLE
+    PUSHBUTTON      "Refrescar",IDUSUREFRESCA,275,225,51,14
+END
+
+IDD_MATA DIALOG  0, 0, 161, 87
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Matar Usuario"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,104,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,104,24,50,14
+    LTEXT           "ATENCION: Para matar el proceso debe introducir la clave maestra. Recuerde que el uso indiscriminado de esta opcion puede ocasionar daños a sus datos.",
+                    IDC_STATIC,7,7,89,56
+    EDITTEXT        IDC_CLAVEMATA,7,65,147,15,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_TRAZA_BUSCAR DIALOG  30, 30, 186, 46
+STYLE DS_ABSALIGN | DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | 
+    WS_CAPTION
+CAPTION "Buscar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TRAZA_ABUSCAR,7,7,112,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_COLORES DIALOG  0, 0, 206, 79
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Definicion de Colores"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,149,33,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,149,58,50,14
+    LTEXT           "CAMPO",IDC_S_COLORCONSULTA,15,19,40,10
+    PUSHBUTTON      "Cambiar",IDC_BUTTON1,13,34,41,12
+    GROUPBOX        "Consulta",IDC_STATIC,7,7,58,65
+    GROUPBOX        "Selección",IDC_STATIC,73,7,60,65
+    PUSHBUTTON      "Cambiar",IDC_BUTTON2,81,34,41,12
+    LTEXT           "SELECCION",IDC_S_COLORSELECCION,81,19,43,10
+END
+
+IDD_GRIDRELLENA DIALOGEX 0, 0, 43, 51
+STYLE DS_SETFONT | DS_3DLOOK | WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",ACS_CENTER | 
+                    ACS_TRANSPARENT | ACS_AUTOPLAY | WS_BORDER | WS_TABSTOP,
+                    0,0,43,51
+END
+
+IDD_ERRORFICHERO DIALOGEX 0, 0, 202, 112
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | DS_CENTERMOUSE | 
+    WS_POPUP | WS_CAPTION
+CAPTION "AVISO"
+FONT 10, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,87,87,30,14,WS_DISABLED
+    ICON            32515,IDC_STATIC,92,43,20,20
+    EDITTEXT        IDC_EDIT1,7,59,188,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT2,7,30,188,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT3,7,2,188,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_INDEXADO DIALOG  0, 0, 228, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Indices"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,90,127,50,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT1,15,7,197,80,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT2,45,97,167,19,ES_AUTOHSCROLL | ES_READONLY
+    ICON            32515,IDC_STATIC,15,95,21,20
+END
+
+IDD_ENVIACORREO DIALOG  0, 0, 285, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enviar Correo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,62,17,216,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,62,31,216,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,62,44,216,11,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,62,61,216,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT4,14,89,264,56,ES_MULTILINE | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Enviar",IDOK,76,149,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,165,149,50,14
+    RTEXT           "Destino...:",IDC_STATIC,23,17,39,11
+    RTEXT           "Origen...:",IDC_STATIC,23,31,39,11
+    RTEXT           "Asunto...:",IDC_STATIC,23,44,39,11
+    RTEXT           "Documento...:",IDC_STATIC,14,59,48,11
+    LTEXT           "NOTA",IDC_STATIC,14,76,39,11
+END
+
+IDD_DIALOGOOLDIMPRE DIALOGEX 0, 0, 497, 326
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Impresora"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LISTAOLDIMPRE,7,7,117,296,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_LAIMPRE,409,223,79,15,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_SPOOLOLDIMPRE,409,242,80,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,145,308,78,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,285,308,79,14
+    LTEXT           "Fichero spool:",IDC_STATIC9,359,242,45,12
+    LTEXT           "Modo de Impresión:",IDC_STATIC8,345,227,64,12
+    COMBOBOX        IDC_IMPREFONT,139,50,188,147,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COPIAS,421,123,37,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_MARGENS,401,84,64,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Ajustar tamaño de fuente",IDC_IMPREAJUSTA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,78,94,14
+    EDITTEXT        IDC_IMPRELINEAS,303,68,23,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IMPRECOLS,303,85,23,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Incluir encabezados",IDC_EXCELCABECERA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,147,138,78,14
+    EDITTEXT        IDC_POSEXCEL,293,137,23,13,ES_AUTOHSCROLL
+    LTEXT           "Izquierdo:",IDC_STATIC2,357,60,59,10
+    LTEXT           "Superior:",IDC_STATIC4,357,86,35,9
+    GROUPBOX        "Tipo de Letra",IDC_STATIC1,128,39,208,68
+    LTEXT           "mm.",IDC_STATIC50,467,59,18,11
+    LTEXT           "mm.",IDC_STATIC52,467,88,15,11
+    LTEXT           "Lineas Pág.:",IDC_STATIC5,251,72,45,11
+    LTEXT           "Columnas Pág.:",IDC_STATIC6,251,89,52,10
+    LTEXT           "Celda inicial:",IDC_STATIC7,245,140,40,11
+    LTEXT           "Nº de fax:",IDC_STATIC3,137,218,44,10
+    PUSHBUTTON      "Dispositivo",IDC_SELIMPRE,139,7,45,15
+    EDITTEXT        IDC_IMPREWINDOWS,199,7,197,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Previsualizar",IDC_PRECRYSTAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,419,7,57,15
+    CONTROL         "Nº de fax precargado desde el informe:",
+                    IDC_FAXAUTOMATICO,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_TABSTOP,135,201,193,13
+    EDITTEXT        IDC_NUMEROFAX,189,217,139,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CORREOFAX,189,233,139,12,ES_AUTOHSCROLL
+    LTEXT           "Enviar reporte a:",IDC_STATIC11,135,233,53,10
+    LTEXT           "Copias:",IDC_STATIC10,371,128,27,10
+    LTEXT           "mm.",IDC_STATIC51,467,72,18,11
+    EDITTEXT        IDC_MARGENI2,401,70,64,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "A pdf",IDC_PRECRYSTAL2,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,419,23,36,15
+    LTEXT           "Asunto:",IDC_STATIC12,135,246,29,10
+    EDITTEXT        IDC_CORREOASUNTO,189,247,139,12,ES_AUTOHSCROLL
+    LTEXT           "Izquierdo (2):",IDC_STATIC53,357,72,41,10
+    LTEXT           "Desde Pág.:",IDC_STATIC54,371,156,41,10
+    LTEXT           "Hasta Pág.:",IDC_STATIC55,371,170,41,10
+    EDITTEXT        IDC_MARGENI,401,55,64,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_DESDEPG,421,152,37,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_HASTAPG,421,168,37,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "No intercalar:",IDC_DOBLEHOJA,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,370,139,88,12
+    GROUPBOX        "Márgenes",IDC_STATIC57,343,40,146,68
+    GROUPBOX        "Excel",IDC_STATIC56,135,124,189,43
+    GROUPBOX        "Copias",IDC_STATIC58,343,112,146,88
+    GROUPBOX        "FAX",IDC_STATIC59,128,182,208,95
+    CONTROL         "Seleccionar impresora Crystal:",IDC_SELIMPRECRISTAL,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_DISABLED | 
+                    WS_TABSTOP,281,24,110,12
+END
+
+IDD_FILTRO DIALOGEX 0, 0, 581, 343
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Filtros y Rangos"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Obtener",IDOK,503,5,42,17
+    PUSHBUTTON      "Salir",IDCANCEL,547,5,28,17
+    LISTBOX         IDC_LIST1,111,23,105,185,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    CONTROL         "Ver solo seleccionados",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,126,241,88,9
+    GROUPBOX        "Por Límites",IDC_STATIC4,226,155,135,68
+    EDITTEXT        IDC_EDIT2,231,177,125,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,231,205,125,15,ES_AUTOHSCROLL
+    GROUPBOX        "Por Valor",IDC_STATIC5,226,225,135,28
+    EDITTEXT        IDC_EDIT4,231,234,125,15,ES_AUTOHSCROLL
+    RADIOBUTTON     "Búsqueda Parcial al Principio",IDC_RADIOPARCIAL,239,269,
+                    109,10,WS_TABSTOP
+    RADIOBUTTON     "Búsqueda por Contenido",IDC_RADIOCONTENIDO,239,278,109,
+                    10,WS_TABSTOP
+    CONTROL         "Ignorar Mayus./Minus.",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,230,294,89,9
+    CONTROL         "Búsqueda Inversa (negación)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,230,309,110,9
+    CONTROL         "Ver solo con orden/cond",IDC_CHECK5,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,126,231,92,8
+    COMBOBOX        IDC_COMBO2,5,5,211,230,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Orden alfabético",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,125,260,73,9
+    PUSHBUTTON      "Guardar",IDC_BUTTONGUARDAR,371,5,31,17
+    LTEXT           "Desde",IDC_STATIC10a,236,167,48,9
+    LTEXT           "Hasta",IDC_STATIC10b,236,194,48,9
+    CONTROL         "PREDETERMINADA",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | BS_FLAT | WS_TABSTOP,21,300,82,9
+    CONTROL         "Borrador Local",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | BS_FLAT | WS_TABSTOP,21,286,82,9
+    PUSHBUTTON      "Selec. Todos",IDC_BUTTON1,119,213,44,10
+    PUSHBUTTON      "Ninguno",IDC_BUTTON2,171,213,45,10
+    EDITTEXT        IDC_FNOMCAMPO,226,15,135,16,ES_CENTER | ES_AUTOHSCROLL,
+                    WS_EX_DLGMODALFRAME
+    RADIOBUTTON     "Sin Orden",IDC_SINORDEN,226,50,44,9,WS_TABSTOP
+    RADIOBUTTON     "Asc",IDC_ASCENDENTE,291,50,27,9,WS_TABSTOP
+    RADIOBUTTON     "Desc",IDC_DESCENDENTE,326,50,31,9,WS_TABSTOP
+    PUSHBUTTON      "Borrar",IDC_BUTTONBORRAR,406,5,29,17
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,7,23,102,195
+    LISTBOX         IDC_LIST3,5,225,115,30,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Nueva Relación",IDC_NUEVARELACION,5,260,60,15
+    CONTROL         "List4",IDC_LIST4,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,367,25,208,275
+    GROUPBOX        "Consulta",IDC_STATIC1,15,275,90,40
+    CONTROL         "Agrupador",IDC_AGRU,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,226,65,50,10
+    CONTROL         "En total agrupado",IDC_CONDAGRU,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,223,140,70,10
+    GROUPBOX        "Selección-Filtrado",IDC_STATIC3,221,130,145,126
+    PUSHBUTTON      "Campo virtual",IDC_BUTTON3,70,260,50,15,WS_DISABLED
+    PUSHBUTTON      "Formato Listado",IDC_FORMATO,438,5,60,17,WS_DISABLED
+    CONTROL         "Preguntar",IDC_PREGUNTAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,302,140,50,10
+    GROUPBOX        "Ordenación",IDC_STATIC2,221,40,145,45
+    LTEXT           "::CAMPO::",IDC_STATIC6,236,5,40,10
+    COMBOBOX        IDC_COMBOOPERA,273,110,85,120,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBOCABECERA,273,95,85,230,CBS_DROPDOWNLIST | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Operación:",IDC_STATIC9,226,110,35,10
+    LTEXT           "Subcabera:",IDC_STATIC8,226,95,40,10
+    CONTROL         "Visualizable",IDC_CHECKINCLUIDO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,291,5,55,10
+    COMBOBOX        IDC_ORDENCLAVE,327,65,35,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nº Clave:",IDC_STATIC7,291,65,30,10
+    PUSHBUTTON      "Bajar",IDC_BAJAR,386,306,44,13
+    PUSHBUTTON      "Subir",IDC_SUBIR,433,306,44,13
+    RADIOBUTTON     "Búsqueda Exacta",IDC_RADIOEXACTO,239,259,89,10,
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC10,221,254,145,38
+END
+
+IDD_CAMBIACLAVE DIALOG  0, 0, 151, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "ENTRE LA CLAVE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_LACLAVE3,21,10,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_LACLAVE2,21,43,64,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,94,9,50,17
+    PUSHBUTTON      "Cancelar",IDCANCEL,94,34,50,16
+    LTEXT           "Confirme la clave",IDC_STATIC,21,30,58,7
+END
+
+IDD_NEWPASSWD DIALOGEX 0, 0, 182, 130
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cambio Password"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_PASSWORD2,80,60,80,15,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD3,80,85,80,15,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,80,35,80,15,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,35,110,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,110,110,50,14
+    EDITTEXT        IDC_USUARIO,80,10,80,15,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Usuario:",IDC_STATIC1,34,15,30,8
+    LTEXT           "Nueva Clave:",IDC_STATIC3,15,60,60,10
+    LTEXT           "Clave anterior:",IDC_STATIC2,15,35,60,10
+    LTEXT           "Confirme Clave:",IDC_STATIC4,10,85,60,10
+END
+
+IDD_COLUMNAS DIALOGEX 0, 0, 182, 263
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Seleccion de columnas"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST1,5,10,173,200,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,122,220,50,15
+    PUSHBUTTON      "Cancelar",IDCANCEL,122,241,50,15
+    CONTROL         "Ver Solo Seleccionados",IDC_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | NOT WS_VISIBLE | 
+                    WS_DISABLED | WS_TABSTOP,7,7,88,9
+    CONTROL         "Orden Alfabético",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,
+                    102,7,73,9
+    PUSHBUTTON      "Selec. Todos",IDC_BUTTON1,63,222,44,15
+    PUSHBUTTON      "Ninguno",IDC_BUTTON2,63,241,45,15
+    PUSHBUTTON      "Arriba",IDC_ARRIBA,7,222,39,13
+    PUSHBUTTON      "Abajo",IDC_ABAJO,7,243,39,13
+END
+
+IDD_SOPORTE DIALOG  0, 0, 186, 236
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Soporte"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cerrar",IDCANCEL,60,220,50,14
+    EDITTEXT        IDC_EDIT2,5,175,175,35,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST1,5,5,175,160,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXPORTAGRID DIALOGEX 0, 0, 207, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Exportación"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    RADIOBUTTON     "Formato DBF",IDC_RADIODBF,15,15,55,20,WS_GROUP
+    RADIOBUTTON     "Formato PDB",IDC_RADIOPDB,100,15,55,20,WS_GROUP
+    EDITTEXT        IDC_DESTINO,15,40,155,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTONDESTINO,170,40,15,15
+    RADIOBUTTON     "No abrir",IDC_RADIONOABRIR,20,84,81,13,WS_GROUP
+    RADIOBUTTON     "Crystal Reports (Introducir fichero .rpt)",
+                    IDC_RADIOCRYSTAL2,20,104,162,10,WS_GROUP
+    RADIOBUTTON     "Excel",IDC_RADIOEXCEL,20,122,142,13,WS_GROUP
+    RADIOBUTTON     "Programa predeterminado Windows",IDC_RADIOPREDER,20,143,
+                    150,11,WS_GROUP
+    RADIOBUTTON     "Especificar",IDC_RADIOESPE,20,163,150,10,WS_GROUP
+    EDITTEXT        IDC_PROGRAMA,15,185,155,15,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "...",IDC_BUTTONESPE,170,185,15,15,WS_DISABLED
+    CONTROL         "Borrar al salir del programa.",IDC_CHECKBORRAR,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,15,205,155,15
+    DEFPUSHBUTTON   "OK",IDOK,50,230,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,110,230,50,14
+    GROUPBOX        "Formato",IDC_STATIC1,5,5,190,55,WS_GROUP
+    GROUPBOX        "Abrir con",IDC_STATIC2,5,65,190,160,WS_GROUP
+END
+
+IDD_BROWSE DIALOG  0, 0, 235, 220
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Seleccione destino"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,200,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,130,200,50,14
+    CONTROL         "Tree1",IDC_SELE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,0,0,235,195
+END
+
+IDD_NUEVARELA DIALOGEX 0, 0, 375, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nueva Relacion"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,230,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,200,230,50,14
+    COMBOBOX        IDC_FICHEROS,200,5,165,200,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CAMPOSO,14,5,165,198,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CAMPOSD,200,25,162,177,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RELA,13,208,347,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGCALENDAR DIALOGEX 0, 0, 130, 138
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_TOPMOST
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,13,100,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,70,100,50,14
+    CONTROL         "",IDC_MONTHCALENDAR1,"SysMonthCal32",MCS_NOTODAY | 
+                    MCS_NOTODAYCIRCLE | WS_TABSTOP,0,0,129,96,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_ORDENAR DIALOGEX 0, 0, 230, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ordenar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,107,170,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,167,170,50,14
+    COMBOBOX        IDC_ORDENARPOR,15,32,128,157,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Ordenar por",IDC_STATIC1,15,17,62,11
+    LTEXT           "Luego por",IDC_STATIC2,17,61,62,11
+    LTEXT           "Luego por",IDC_STATIC3,15,103,62,11
+    COMBOBOX        IDC_LUEGOPOR,17,75,125,114,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_LUEGOPOR2,16,119,125,70,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Ascendente",IDC_ASC1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,156,22,56,13
+    CONTROL         "&Descendente",IDC_DES1,"Button",BS_AUTORADIOBUTTON,156,
+                    41,58,13
+    CONTROL         "As&cendente",IDC_ASC2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,156,69,57,13
+    CONTROL         "D&escendente",IDC_DES2,"Button",BS_AUTORADIOBUTTON,156,
+                    88,59,13
+    CONTROL         "Ascende&nte",IDC_ASC3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,156,113,60,13
+    CONTROL         "Descenden&te",IDC_DES3,"Button",BS_AUTORADIOBUTTON,156,
+                    132,60,13
+    GROUPBOX        "",IDC_STATIC4,145,14,78,43
+    GROUPBOX        "",IDC_STATIC5,146,60,77,46
+    GROUPBOX        "",IDC_STATIC6,146,108,77,43
+END
+
+IDD_BUSCAR DIALOGEX 0, 0, 161, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Buscar"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,202,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,73,202,50,14
+    LTEXT           "Buscar en:",IDC_STATIC5,7,14,41,14
+    COMBOBOX        IDC_BUSCAREN,44,14,88,202,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Por Límites",IDC_STATIC1,7,43,135,66
+    EDITTEXT        IDC_EDIT2,13,65,125,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,13,93,125,15,ES_AUTOHSCROLL
+    GROUPBOX        "Por Valor",IDC_STATIC4,7,113,135,29
+    EDITTEXT        IDC_EDIT4,13,125,125,15,ES_AUTOHSCROLL
+    RADIOBUTTON     "Búsqueda Exacta",IDC_RADIOEXACTO,17,142,109,10
+    RADIOBUTTON     "Búsqueda Parcial al Principio",IDC_RADIOPARCIAL,17,152,
+                    109,10
+    RADIOBUTTON     "Búsqueda por Contenido",IDC_RADIOCONTENIDO,17,162,109,
+                    10
+    CONTROL         "Ignorar Mayus./Minus.",IDC_CHECK3,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,17,178,89,9
+    CONTROL         "Búsqueda Inversa (negación)",IDC_CHECK4,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,17,188,110,9
+    LTEXT           "Desde",IDC_STATIC2,17,55,48,9
+    LTEXT           "Hasta",IDC_STATIC3,17,82,48,9
+END
+
+IDD_OPERACIONES DIALOGEX 0, 0, 159, 132
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Operaciones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,110,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,110,50,14
+    LTEXT           "Operar en",IDC_STATIC1,15,17,37,12
+    COMBOBOX        IDC_COMBO2,53,17,88,108,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Máximo",IDC_MAXIMO,"Button",BS_AUTORADIOBUTTON,54,45,41,
+                    11
+    CONTROL         "Mínimo",IDC_MINIMO,"Button",BS_AUTORADIOBUTTON,54,62,38,
+                    11
+    CONTROL         "Suma",IDC_SUMA,"Button",BS_AUTORADIOBUTTON,54,79,40,11
+END
+
+IDD_DIALOGCAMBIO DIALOGEX 0, 0, 314, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO1,56,28,145,235,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Día",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT,30,59,26,10
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,91,54,84,15
+    CONTROL         "",IDC_DATETIMEPICKER2,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,208,54,81,15
+    EDITTEXT        IDC_HORADESDE,92,156,42,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HORAHASTA,210,156,42,15,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO2,56,181,194,195,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,92,212,161,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,87,233,161,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Aceptar",IDOK,166,253,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,245,253,50,14
+    LTEXT           "Usuario:",IDC_STATIC1,23,28,33,11
+    CONTROL         "Hoy",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,49,75,29,10
+    CONTROL         "Última semana",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    49,91,62,10
+    CONTROL         "Último mes",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,49,
+                    106,50,10
+    CONTROL         "Últimos 3 meses",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,
+                    49,121,67,10
+    CONTROL         "Todo",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,49,138,32,
+                    10
+    LTEXT           "Desde:",IDC_STATIC2,64,60,26,9
+    LTEXT           "Hasta:",IDC_STATIC3,179,60,26,9
+    LTEXT           "Campo:",IDC_STATIC4,21,182,35,11
+    LTEXT           "Valor anterior:",IDC_STATIC5,30,211,53,11
+    LTEXT           "Valor nuevo:",IDC_STATIC6,30,232,53,11
+    CONTROL         "Buscar en Todas las Tablas y Registros",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,141,
+                    137,145,14
+    LTEXT           "Hora Desde:",IDC_STATIC,49,159,42,12
+    LTEXT           "Hora Hasta:",IDC_STATIC,160,159,48,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "&Opciones"
+    BEGIN
+        MENUITEM "Impresión",                   ID_IMPREDATOS
+        MENUITEM "Crystal Reports",             ID_ACTIVAR_CRISTAL
+        MENUITEM "Menú ERP",                    ID_ACTIVAR_ERP
+        MENUITEM "Funciones Doc.",              ID_ACTIVAR_EVT
+        MENUITEM "Telesoporte: DSWebcall",      ID_CONTROLREMTO
+        MENUITEM "&Salir",                      ID_APP_EXIT
+    END
+    POPUP "&Edición"
+    BEGIN
+        MENUITEM "Validar",                     801
+        MENUITEM "Cancelar",                    807
+        MENUITEM "Consultar Relación",          820
+        MENUITEM "Consultar por Claves",        821
+        MENUITEM "Cambio de Empresa",           PIDO_EMPRESA
+        MENUITEM "Búsqueda General",            ID_BUSCON
+        MENUITEM "Filtros Consulta",            ID_CONSULTA_FILTRO
+        MENUITEM "Excel",                       ID_EXPORTA_EXCEL
+        MENUITEM "Word",                        ID_EXPORTA_WORD
+        MENUITEM "PDB",                         ID_EXPORTA_PLB
+        MENUITEM "XML",                         ID_EXPORTA_XML
+        MENUITEM "Impresión",                   ID_GRIDIMPRIME
+        POPUP "Funciones de Programa"
+        BEGIN
+            MENUITEM "F2",                          824
+            MENUITEM "F3",                          825
+            MENUITEM "F4",                          826
+            MENUITEM "F5",                          827
+            MENUITEM "F6",                          828
+            MENUITEM "F7",                          829
+            MENUITEM "F8",                          830
+            MENUITEM "F9",                          831
+            MENUITEM "F10",                         832
+            MENUITEM "F12",                         823
+        END
+    END
+    POPUP "&Ver"
+    BEGIN
+        MENUITEM "Menú en Arbol",               ID_VERTREEMENU, CHECKED
+        MENUITEM "Expandir solo una rama",      ID_SINGLEEXPAND
+        MENUITEM "Control de Tareas",           ID_MULTITAREA, CHECKED
+        MENUITEM "Usuarios Activos",            ID_USERLIST
+        MENUITEM "Menú Propio",                 ID_MENUSER
+        MENUITEM "Fondo Siempre Visible",       ID_SIEMPREHTML
+        MENUITEM "Fondo Web",                   ID_FONDOHTML
+        MENUITEM "Cambio Moneda",               PIDO_VEREURO
+        MENUITEM "Buscar en Menú",              ID_BUSCAMENU
+        POPUP "Pantalla 9"
+        BEGIN
+            MENUITEM "100%",                        ID_AJUSTARPANTALLA9_100
+            MENUITEM "125%",                        ID_AJUSTARPANTALLA9_125
+            MENUITEM "150%",                        ID_AJUSTARPANTALLA9_150
+            MENUITEM "175%",                        ID_PANTALLA9_175
+            MENUITEM "200%",                        ID_PANTALLA9_200
+            MENUITEM "Ajuste",                      ID_9FONTAUTO
+        END
+    END
+    MENUITEM "&Ir a...",                    ID_IRA
+    POPUP "Colores Grid"
+    BEGIN
+        MENUITEM "Fondo y Menú",                ID_SETCOLORES
+        MENUITEM "Fondo Selección Línea",       ID_SETCOLORES1, GRAYED
+        MENUITEM "Fondo Selección Campo",       ID_SETCOLORES2, GRAYED
+        MENUITEM "Texto y Menú",                ID_SETCOLORES3, GRAYED
+        MENUITEM "Texto Selección Línea",       ID_SETCOLORES4, GRAYED
+        MENUITEM "Texto Selección Campo",       ID_SETCOLORES5, GRAYED
+    END
+    MENUITEM "Tareas",                      ID_LISTATAREAS
+    MENUITEM "F1-Ay&uda",                   ID_MIAYUDA
+END
+
+IDR_MENUTRAZA MENU 
+BEGIN
+    POPUP "Fichero"
+    BEGIN
+        MENUITEM "Abrir",                       ID_TRAZA_ABRIR, GRAYED
+        MENUITEM "F3 Buscar",                   ID_TRAZA_BUSCAR
+        MENUITEM "F4 Siguiente",                ID_TRAZA_SIGUIENTE
+    END
+    POPUP "Avance"
+    BEGIN
+        MENUITEM "F8 Uno",                      ID_TRAZA_AVANCEUNO, GRAYED
+        MENUITEM "F7 Salto",                    ID_TRAZA_AVANCESALTO, GRAYED
+        MENUITEM "F6 Continuo",                 ID_TRAZA_AVANCECONTINUO
+        , GRAYED
+        MENUITEM "F5 Correr",                   ID_TRAZA_CORRER, GRAYED
+    END
+    POPUP "BreakPoints"
+    BEGIN
+        MENUITEM "F10 Quitar Todos",            ID_TRAZA_TODOSBREAK, GRAYED
+    END
+END
+
+IDR_MENU2 MENU 
+BEGIN
+    POPUP "Fonts Modo 9.5"
+    BEGIN
+        MENUITEM "Fonts por Defecto",           32866
+        MENUITEM "Auto",                        32867, GRAYED
+        MENUITEM "Font Primario",               32868, GRAYED
+        MENUITEM "Font de Texto",               32869, GRAYED
+        MENUITEM "Font de Reverse",             32870, GRAYED
+        MENUITEM "Font de Intenso",             32871, GRAYED
+        MENUITEM "Font de Mensaje",             32872, GRAYED
+        MENUITEM "Font de Botones",             32873, GRAYED
+        MENUITEM "Font de Texto",               32884, GRAYED
+    END
+    MENUITEM "Menu",                        32912
+    POPUP "Registro"
+    BEGIN
+        MENUITEM "Primer registro\tAlt-p",      59648
+        MENUITEM "Último registro\tAlt-u",      59649, GRAYED
+        MENUITEM "Registro anterior\tAlt-a",    59651, GRAYED
+        MENUITEM "Siguiente registro\tAlt-s",   59650, GRAYED
+        MENUITEM "Modifcar Registro",           32828, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Nuevo Registro",              32829, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Borrar Registro",             32830, GRAYED
+    END
+    POPUP "Fonts y Colores"
+    BEGIN
+        MENUITEM "Fonts por Defecto",           32793
+        MENUITEM "Font Edicion",                32786, GRAYED
+        MENUITEM "Font Texto Normal",           32791, GRAYED
+        MENUITEM "Font Texto Enmarcado",        32787, GRAYED
+        MENUITEM "Font Texto Destacado",        32792, GRAYED
+        MENUITEM "Font Titulos",                32788, GRAYED
+        MENUITEM "Font Celdillas",              32821, GRAYED
+        MENUITEM "Color Fondo Grid y Menu",     32822
+        MENUITEM "Color Fondo Selección Linea Grid", 32877, GRAYED
+        MENUITEM "Color Fondo Selección Campo Grid", 32878, GRAYED
+        MENUITEM "Color Texto Grid y Menu",     32879, GRAYED
+        MENUITEM "Color Texto Selección Linea Grid", 32880, GRAYED
+        MENUITEM "Color Texto Selección Campo Grid", 32881, GRAYED
+    END
+    MENUITEM "F1-Ay&uda",                   822
+    MENUITEM "Informaciones",               32875
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ds.ico"
+IDR_DSXTYPE             ICON                    "res\\DsxDoc.ico"
+IDI_INDICATOR           ICON                    "res\\indicato.ico"
+IDI_NUEVA               ICON                    "res\\nueva.ico"
+IDR_MAINFRAME1          ICON                    "res\\idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_EMBEDDABLE_DESIGNER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 535
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+        HORZGUIDE, 41
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        VERTGUIDE, 40
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+        HORZGUIDE, 19
+        HORZGUIDE, 28
+    END
+
+    IDD_ENTRACLAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+        HORZGUIDE, 14
+    END
+
+    IDD_TRASMITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        VERTGUIDE, 142
+        VERTGUIDE, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+        HORZGUIDE, 17
+        HORZGUIDE, 25
+        HORZGUIDE, 222
+        HORZGUIDE, 232
+        HORZGUIDE, 244
+        HORZGUIDE, 251
+    END
+
+    IDD_USUARIOS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 410
+        VERTGUIDE, 51
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+        HORZGUIDE, 201
+        HORZGUIDE, 217
+    END
+
+    IDD_MATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_TRAZA_BUSCAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_COLORES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_ERRORFICHERO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        VERTGUIDE, 7
+        VERTGUIDE, 117
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_INDEXADO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_ENVIACORREO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        VERTGUIDE, 14
+        VERTGUIDE, 62
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIALOGOOLDIMPRE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 492
+        VERTGUIDE, 124
+        VERTGUIDE, 128
+        VERTGUIDE, 336
+        VERTGUIDE, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_FILTRO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        VERTGUIDE, 126
+        VERTGUIDE, 172
+        VERTGUIDE, 184
+        VERTGUIDE, 193
+        VERTGUIDE, 307
+        VERTGUIDE, 575
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 341
+        HORZGUIDE, 23
+        HORZGUIDE, 40
+        HORZGUIDE, 67
+    END
+
+    IDD_CAMBIACLAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        VERTGUIDE, 21
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_NEWPASSWD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_COLUMNAS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        VERTGUIDE, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+        HORZGUIDE, 23
+        HORZGUIDE, 40
+        HORZGUIDE, 67
+    END
+
+    IDD_SOPORTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_EXPORTAGRID, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        VERTGUIDE, 20
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_BROWSE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_NUEVARELA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_DIALOGCALENDAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 128
+        BOTTOMMARGIN, 137
+    END
+
+    IDD_ORDENAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_BUSCAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_OPERACIONES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 125
+    END
+
+    IDD_DIALOGCAMBIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        VERTGUIDE, 31
+        VERTGUIDE, 49
+        VERTGUIDE, 56
+        VERTGUIDE, 92
+        VERTGUIDE, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+        HORZGUIDE, 69
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FILTRO DLGINIT
+BEGIN
+    IDC_COMBOOPERA, 0x403, 1, 0
+"\000" 
+    IDC_COMBOOPERA, 0x403, 5, 0
+0x7553, 0x616d, "\000" 
+    IDC_COMBOOPERA, 0x403, 7, 0
+0xe14d, 0x6978, 0x6f6d, "\000" 
+    IDC_COMBOOPERA, 0x403, 7, 0
+0xed4d, 0x696e, 0x6f6d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "Q",            807,                    VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         832,                    VIRTKEY, NOINVERT
+    VK_F12,         ID_ACTIVAR_ERP,         VIRTKEY, CONTROL, NOINVERT
+    VK_DOWN,        ID_ALT_DOWN,            VIRTKEY, ALT, NOINVERT
+    VK_UP,          ID_ALT_UP,              VIRTKEY, ALT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_NEXT,        ID_NEXT_PANE,           VIRTKEY, ALT, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, CONTROL, ALT, 
+                                                    NOINVERT
+    VK_PRIOR,       ID_PREV_PANE,           VIRTKEY, ALT, NOINVERT
+    "T",            ID_STARTMYTIMER,        VIRTKEY, SHIFT, CONTROL, ALT, 
+                                                    NOINVERT
+    "S",            TECLA_SUPERUSUARIO,     VIRTKEY, SHIFT, CONTROL, ALT, 
+                                                    NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,9,2,48
+ PRODUCTVERSION 10,9,2,48
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "FileDescription", "Runtime Diagram"
+            VALUE "FileVersion", "10, 9, 2, 48"
+            VALUE "InternalName", "Diagramx"
+            VALUE "LegalCopyright", "Copyright (C) Diagram Software 1999-2009"
+            VALUE "OriginalFilename", "Diagramx.EXE"
+            VALUE "ProductName", "Aplicación Diagramx"
+            VALUE "ProductVersion", "10, 9, 2, 48"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SKIN
+//
+
+IDR_SKIN1               SKIN                    "res\\ds.Skin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "Error de inicialización OLE. Cerciórese de tener la versión correcta de las bibliotecas OLE."
+    IDP_FAILED_TO_CREATE    "No se pudo crear el objeto. Cerciórese de que el objeto esté introducido en el registro del sistema."
+    IDP_SOCKETS_INIT_FAILED "Error al inicializar zócalos de Windows."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Diagramx\n\nDsx\nArchivos Diagramx (*.dsx)\n.dsx\nDiagramx.Documento\nDsx.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Diagramx"
+    AFX_IDS_IDLEMESSAGE     "Preparado"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAY"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DESP"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Crea un nuevo documento\nNuevo"
+    ID_FILE_OPEN            "Abre un documento ya existente\nAbrir"
+    ID_FILE_CLOSE           "Cierra el documento activo\nCerrar"
+    ID_FILE_SAVE            "Guarda el documento activo\nGuardar"
+    ID_FILE_SAVE_AS         "Guarda el documento activo con un nuevo nombre\nGuardar como"
+    ID_FILE_PAGE_SETUP      "Cambia las opciones de impresión\nPreparar página"
+    ID_FILE_PRINT_SETUP     "Cambia las opciones de impresora y de impresión\nConfigurar impresora"
+    ID_FILE_PRINT           "Imprime la Ficha activa\nImprimir Ficha"
+    ID_FILE_PRINT_PREVIEW   "Muestra páginas completas\nPresentación preliminar"
+    ID_FILE_SEND_MAIL       "Envía el documento activo por correo electrónico\nEnviar correo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Muestra información del programa, número de versión y copyright\nAcerca de"
+    ID_APP_EXIT             "Sale de la aplicación; le pide que guarde los documentos\nSalir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Abre este documento"
+    ID_FILE_MRU_FILE2       "Abre este documento"
+    ID_FILE_MRU_FILE3       "Abre este documento"
+    ID_FILE_MRU_FILE4       "Abre este documento"
+    ID_FILE_MRU_FILE5       "Abre este documento"
+    ID_FILE_MRU_FILE6       "Abre este documento"
+    ID_FILE_MRU_FILE7       "Abre este documento"
+    ID_FILE_MRU_FILE8       "Abre este documento"
+    ID_FILE_MRU_FILE9       "Abre este documento"
+    ID_FILE_MRU_FILE10      "Abre este documento"
+    ID_FILE_MRU_FILE11      "Abre este documento"
+    ID_FILE_MRU_FILE12      "Abre este documento"
+    ID_FILE_MRU_FILE13      "Abre este documento"
+    ID_FILE_MRU_FILE14      "Abre este documento"
+    ID_FILE_MRU_FILE15      "Abre este documento"
+    ID_FILE_MRU_FILE16      "Abre este documento"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Cambia a la siguiente sección de ventana\nSiguiente sección"
+    ID_PREV_PANE            "Vuelve a la sección de ventana anterior\nSección anterior"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Divide la ventana activa en secciones\nDividir"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Borra la selección\nBorrar"
+    ID_EDIT_CLEAR_ALL       "Borra todo\nBorrar todo"
+    ID_EDIT_COPY            "Copia la selección y la coloca en el portapapeles\nCopiar"
+    ID_EDIT_CUT             "Corta la selección y la coloca en el portapapeles\nCortar"
+    ID_EDIT_FIND            "Buscaa el texto especificado\nBuscar"
+    ID_EDIT_PASTE           "Inserta el contenido del portapapeles\nPegar"
+    ID_EDIT_PASTE_LINK      "Inserta el contenido del portapapeles y un vínculo a su origen\nPegar vínculo"
+    ID_EDIT_PASTE_SPECIAL   "Inserta el contenido del portapapeles con opciones\nPegado especial"
+    ID_EDIT_REPEAT          "Repite la última acción\nRepetir"
+    ID_EDIT_REPLACE         "Reemplaza texto específico por otro texto\nReemplazar"
+    ID_EDIT_SELECT_ALL      "Selecciona todo el documento\nSeleccionar todo"
+    ID_EDIT_UNDO            "Repone el contenido inicial del campo\nDeshacer"
+    ID_EDIT_REDO            "Rehace la acción que acaba de deshacerse\nRehacer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Muestra u oculta la barra de herramientas\nAlternar Barra de herramientas"
+    ID_VIEW_STATUS_BAR      "Muestra u oculta la barra de estado\nAlternar Barra de estado"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Inserta el nuevo objeto incrustado\nNuevo objeto"
+    ID_OLE_EDIT_LINKS       "Edita objetos vinculados\nEditar vínculos"
+    ID_OLE_EDIT_CONVERT     "Convierte el objeto seleccionado a otro tipo\nConvertir objetos"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activa el objeto incrustado o vinculado"
+    57873                   "Activa el objeto incrustado o vinculado"
+    57874                   "Activa el objeto incrustado o vinculado"
+    57875                   "Activa el objeto incrustado o vinculado"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Cambia el tamaño de la ventana"
+    AFX_IDS_SCMOVE          "Cambia la posición de la ventana"
+    AFX_IDS_SCMINIMIZE      "Reduce la ventana a un icono"
+    AFX_IDS_SCMAXIMIZE      "Agranda la ventana al tamaño completo"
+    AFX_IDS_SCNEXTWINDOW    "Cambia a la ventana del siguiente documento"
+    AFX_IDS_SCPREVWINDOW    "Cambia a la ventana del documento anterior"
+    AFX_IDS_SCCLOSE         "Cierra la ventana activa y le pide que guarde los documentos"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaura la ventana a su tamaño normal"
+    AFX_IDS_SCTASKLIST      "Activa la lista de tareas"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Cierra el modo de presentación preliminar\nCancelar presentación preliminar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRINGCABECERA      "                                    "
+    IDS_RELACION            "                                                                                     "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENSACLAVE          "Pulse F11 o el icono correspondiente para consultar por Claves"
+    IDS_MENSARELA           "Pulse F11 o el icono correspondiente para consultar la Relacion"
+    IDS_USUARIO             "                       "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ERROR2               "Libreria dll INCORRECTA"
+    ID_ERROR3               "Error al crear ventana"
+END
+
+STRINGTABLE 
+BEGIN
+    MID_DISENO              "Programa una tecla de funcion para ejecucion directa\nProgramar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RELACION             "Consultar Relación de la Ficha(F11)\nRelación(F11)"
+    ID_CLAVES               "Consultar claves de la ficha\nConsultar"
+    ID_MIAYUDA              "Muestra ayuda sobre la opcion actual.\nAyuda"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TECLAVALIDA          "Valida Ficha o Entrada corriente\nValidar"
+    807                     "Cancelar o Salir\nSalir"
+    813                     "Repone el valor anterior"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDITAR_CANCELAR      "Cancela y abandona proceso corriente\nCancelar"
+    ID_VIEW_TREE            "Muestra o oculta el menu en arbol de la izquierda\nMenu"
+    ID_AJUSTASIZE           "Cambia el font para datos y edicion\nEdicion"
+    ID_OTROSFONTS           "Ajusta el Font para la linea enmarcada\nEnmarcado"
+    ID_FONTMENSA            "Selecciona el font de titulos\nTitulos"
+    ID_FONTBOTOM            "Selecciona  el font para los botones internos\nBotones"
+    ID_FONTAUTO             "Calcula los fonts segun el tamaño de la ventana\nAuto"
+    ID_FONTTEXTO            "Selecciona el Font normal\nTexto"
+    ID_FONTINTEN            "Selecciona el Font para texto destacado\nDestacado"
+    ID_FONTDEFAULT          "Selecciona la combinacion de Fonts por defecto\nDefault"
+    ID_IMPRESORAINTERNA     "Usar las impresoras de Windows\nImpresora Standard"
+    ID_VERTREEMENU          "Ver el menu en Arbol\nVer el menu en Arbol"
+    ID_IMPREDATOS           "Ajuste parametros de Impresion\nAjuste parametros de  Impresion"
+    ID_IMPREXCEL            "Utiliza el modo de impresion sobre Excel\nImpresion sobre Excel"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLFUNCION          "Funciones\nFunciones"
+    ID_TOOLIR               "Ir a\nIr a"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TRASMITIR            "Trasmite o recibe ficheros entre Cliente/Servidor (utilidad interna)\nUtilidad interna de ficheros"
+    ID_USERLIST             "Muestra una lista de las tareas DIAGRAM en el servidor\nUsuarios"
+END
+
+STRINGTABLE 
+BEGIN
+    PIDO_EMPRESA            "Seleccionar la Empresa Corriente\nSeleccionar la Empresa Corriente"
+    TECLA_SUPERUSUARIO      "Ganar o dejar privilegios de Super Usuario"
+    PIDO_VEREURO            "Mostrar en moneda alternativa\nMostrar en moneda alternativa"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FONTGRID             "Selecciona  el font para las celdillas\nCeldillas"
+    ID_SETCOLORES           "Configuracion de Colores\nColores"
+    ID_RECORD_UPDATE        "Pulse para Modificar el Registro\nModifcar Registro"
+    ID_RECORD_NEW           "Nuevo Registro\nNuevo Registro"
+    ID_RECORD_DELETE        "Borrar Registro\nBorrar Registro"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RECORD_FIRST         "Retrocede al primer registro\nPrimer registro"
+    ID_RECORD_LAST          "Avanza al último registro\nÚltimo registro"
+    ID_RECORD_NEXT          "Avanza al siguiente registro\nSiguiente registro"
+    ID_RECORD_PREV          "Retrocede al registro anterior\nRegistro anterior"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MENUSER              "Activa o Desactiva el menú propio\nMenú Propio"
+    ID_FONDOHTML            "Mostrar el fondo Web si es posible\nFondo Web"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_IMPREPANTA           "Imprime En Pantalla"
+    ID_EXPORTA_EXCEL        "Exportar a EXCEL\nExportar a EXCEL"
+    ID_EXPORTA_WORD         "Exportar a WORD\nExportar a WORD"
+    ID_CONSULTA_FILTRO      "Filtro avanzado\nFiltro avanzado"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUSCAMENU            "Buscar en menú\nBuscar en menú"
+    ID_9FONTAUTO            "Ajuste pantalla a ventana\nAjuste pantalla a ventana"
+    ID_TOOLTIPS             "Activa/Desactiva ventanas emergentes de información"
+    ID_ACTIVAR_CRISTAL      "Abrir informe Crystal Reports\nAbrir informe Crystal Reports"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLGRID        "Muestra u oculta la barra de grid\nAlternar Barra de grid"
+    ID_VIEW_TOOLWEB         "Muestra u oculta la barra de web\nAlternar Barra de web"
+    ID_CONTROLREMTO         "Activar asistencia remota\nActivar asistencia remota"
+    ID_EXPORTA_PLB          "Exporta  el grid a un formato dbf ó pdb\nExpotar a DBF-PDB"
+    ID_EXPORTA_RPT          "Presentación en Crystal Reports"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ACTIVAR_ERP          "Módulo ERP\nMódulo ERP"
+    ID_ACTIVAR_EVT          "Módulo documental\nMódulo documental"
+    ID_ACTIVAR_EVTPBX       "Módulo centralita\nMódulo centralita"
+    ID_ACTIVAR_EVTCRM       "Módulo CRM\nMódulo CRM"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TICSCON              "Indicador velocidad conexión\nIndicador velocidad conexión"
+    ID_EXPORTA_XML          "Exporta como XML\nExporta como XML"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ASISTENCIA           "Aviso para asistencia telefónica\nAviso para asistencia telefónica"
+END
+
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Diagramx.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#include "l.esp\afxprint.rc"        // printing/print preview resources
+#include "l.esp\afxolecl.rc"        // OLE container resources
+#include "l.esp\afxolesv.rc"          // OLE server resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

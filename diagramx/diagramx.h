@@ -1,0 +1,552 @@
+
+// diagramx.h : main header file for the DIAGRAMX application
+//
+
+#if !defined(AFX_DIAGRAMX_H__F1145F3A_5FE2_4615_9FA5_A6369AFBC5C7__INCLUDED_)
+#define AFX_DIAGRAMX_H__F1145F3A_5FE2_4615_9FA5_A6369AFBC5C7__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+#ifndef __AFXWIN_H__
+	#error include 'stdafx.h' before including this file for PCH
+#endif
+
+#include "resource.h"       // main symbols
+
+extern "C" 
+{
+#include "/fgv_10/include/fgvmnexp.h"
+extern const Cid NULO_CID;
+}
+
+extern "C" 
+{
+   void DespachadorLocal(int despacho,int entero,void *puntero);
+   void DespachadorLocal9(int despacho,int entero,void *puntero);
+
+   void FuncionesImpresion(int funcion,void *dato);
+   //void FuncionesImpresion(int funcion,char *dato);
+   
+   /* Llamadas al DLL */
+   BOOL llama_fPreInicializa(void *fff,int *argc,char **argv);
+   BOOL llama_fInicializa(void *fff,HINSTANCE hInst,HWND Ventana,int argc,char **argv,BMP_BASE_PAR *marco);
+   BOOL llama_fFinaliza(void *fff);
+   BOOL llama_fLogin(void *fff,char *usuario,char *password,char *cambio);
+   BOOL llama_fOpcion(void *fff);
+   BOOL llama_fOpcion9(void *fff);
+   BOOL llama_fLogout(void *fff);
+   HWND llama_fDevuelveVentana(void *fff);
+   BOOL llama_fNuevaVentana(void *fff,HINSTANCE hInst,HWND Ventana,BMP_BASE_PAR *marco);
+   BOOL llama_fPreparaEjecucion(void *fff,char *exe,char *tmp,char *user,char *pass,int opcion);   
+   void llama_fpinta_zona(void *fff,HDC hdc,RECT zona,void *pan);
+   void llama_fmensaje_char(void *fff,UINT nChar, UINT nRepCnt, UINT nFlags);
+   void llama_fmensaje_keydown(void *fff,UINT nChar, UINT nRepCnt, UINT nFlags);
+   void llama_fmensaje_keyup(void *fff,UINT nChar, UINT nRepCnt, UINT nFlags);
+   void llama_fmensaje_ldblclk(void *fff,UINT x,UINT y,UINT Flags);
+   void llama_fmensaje_lbuttondown(void *fff,UINT x,UINT y,UINT Flags);
+   void llama_fmensaje_mousemove(void *fff,UINT x,UINT y,UINT Flags);
+   void llama_fmensaje_lbuttonup(void *fff,UINT x,UINT y,UINT Flags);
+   BOOL llama_fmensaje_command(void *fff,WPARAM wParam,LPARAM lParam);
+   int  llama_fDespachadorInterno(void *fff,int f,void *p);
+   
+   /* Llamadas desde el DLL, notificaciones */      
+   
+   
+   void DespachoEnLineas(int modo,RECT *r);
+   void MainTitulo( LPCTSTR lpszString );
+   void CreaMiControl(int entero,char *puntero);
+   void EliminaMiControl(int entero);
+   void AvisoAControl(int entero);
+   void SobreponePantalla(void);
+   void ReponPantalla(void);
+   void MensajeEnCabecera(int lado,char *mensaje);
+   void FuncionesImpresion(int funcion,void *dato);
+   void HazVisible(void);
+   int  ActivarEdita(char *txt,int area);
+   void ControlTrasmision(int entero,void *puntero);
+   void CargaTraza(int entero,void *puntero);
+   void DescargaTraza(int entero,void *puntero);
+   void PuntoTraza(int entero,void *puntero);
+   void EntradaBinaria(int entero,void *puntero);
+   int  DesactivaControles(void);
+   int  ActivaControles(void);
+
+
+   /* Consultas de estado */   
+   int LadoActivo(int lado);
+   
+   void PresentaProgreso(int entero,void *puntero);
+
+   void GestionUsuarios(int entero,void *puntero);
+
+#define TITLE_SIZE          64 
+#define PROCESS_SIZE        MAX_PATH 
+	typedef struct _TASK_LIST 
+	{ 
+		   DWORD       dwProcessId; 
+		   DWORD       dwInheritedFromProcessId; 
+		   BOOL        flags; 
+		   HANDLE      hwnd; 
+		   CHAR        ProcessName[PROCESS_SIZE]; 
+		   CHAR        WindowTitle[TITLE_SIZE]; 
+	} TASK_LIST, *PTASK_LIST;    
+
+}
+
+void CargaInterface(char *parametro);
+int oem_a_ansi(unsigned char *c);
+int ansi_a_oem(unsigned char *c);
+
+extern CString ClaseLocal;
+
+/////////////////////////////////////////////////////////////////////////////
+// CDsxApp:
+// See Diagram9.cpp for the implementation of this class
+//
+class CDsxDoc;
+class CDsxLeftView;
+class CDsxView;
+class CDsxFrame;
+
+extern CDsxDoc *pActiveDoc;
+
+
+class CDsSys
+{
+public:	
+	void NuevaVentana9(CDsxDoc *pDoc,BOOL ajuste = TRUE);
+	void MensajePaint9(CPaintDC &dc);
+	void MensajeMouseMove9(UINT nFlags, CPoint point);
+	void MensajeLButtonUp9(UINT nFlags, CPoint point);
+	void MensajeLButtonDown9(UINT nFlags, CPoint point);
+	void MensajeLButtonDblClk9(UINT nFlags, CPoint point);
+	void MensajeKeyUp9(UINT nChar, UINT nRepCnt, UINT nFlags);
+	void MensajeKeyDown9(UINT nChar, UINT nRepCnt, UINT nFlags);
+	void MensajeChar9(UINT nChar, UINT nRepCnt, UINT nFlags);
+	BOOL Inicializa9();
+	BOOL Inicializa();
+	BOOL PreparaEjecucion(char *exe,char *tmp,char *user,char *pass,int opcion);
+	BOOL PreparaEjecucion9(char *exe,char *tmp,char *user,char *pass,int opcion);
+	BOOL Run();
+    CDsSys();
+    ~CDsSys();
+    void ApuntaLineaDeComando(int *dsargc,char *dsargv[],int maximo,char *exe,char *args);
+    int DespachadorInterno(int funcion,void *parametro);
+    int DespachadorInterno9(int funcion,void *parametro);
+	BOOL MensajeCommand9(WPARAM wParam, LPARAM lParam);
+
+	BOOL haybuscon;
+
+   CString m_Args;   // buffer para parametro ya procesado
+   CString m_Exe;    // buffer para linea de comando ya procesado
+   int m_argc;
+   char *m_argv[100];
+   int m_arg2;
+
+   CString m_Password;
+   CString m_Usuario;
+
+   BOOL m_Autentificado;
+
+   HINSTANCE m_dswinsys;
+   HINSTANCE m_ds9winsys;
+
+   FARPROC   m_fPreInicializa;
+   FARPROC   m_fInicializa;
+   FARPROC   m_fFinaliza;
+   FARPROC   m_fLogin;
+   FARPROC   m_fOpcion;
+   FARPROC   m_fLogout;
+   FARPROC   m_fDevuelveVentana;
+   FARPROC   m_fNuevaVentana;
+   FARPROC   m_fPreparaEjecucion;
+   FARPROC   m_fpinta_zona;
+   FARPROC   m_fmensaje_char;
+   FARPROC   m_fmensaje_keydown;
+   FARPROC   m_fmensaje_keyup;
+   FARPROC   m_fmensaje_ldblclk;
+   FARPROC   m_fmensaje_lbuttondown;
+   FARPROC   m_fmensaje_mousemove;
+   FARPROC   m_fmensaje_lbuttonup;
+   FARPROC   m_fmensaje_command;
+   FARPROC   m_fDespachadorInterno;
+
+
+   FARPROC m_f9Inicializa;
+   FARPROC m_f9Finaliza;
+   FARPROC m_f9Login;
+   FARPROC m_f9Opcion;
+   FARPROC m_f9Logout;
+   FARPROC m_f9DevuelveVentana;
+   FARPROC m_f9NuevaVentana;
+   FARPROC m_f9PreparaEjecucion;
+   FARPROC m_f9pinta_zona;
+   FARPROC m_f9mensaje_char;
+   FARPROC m_f9mensaje_keydown;
+   FARPROC m_f9mensaje_keyup;
+   FARPROC m_f9mensaje_ldblclk;
+   FARPROC m_f9mensaje_lbuttondown;
+   FARPROC m_f9mensaje_mousemove;
+   FARPROC m_f9mensaje_lbuttonup;
+   FARPROC m_f9mensaje_command;
+   FARPROC m_f9DespachadorInterno;
+};
+
+
+class CDsComando : public CCommandLineInfo
+{	
+   friend CDsxDoc;
+   friend CDsSys;
+public:
+   CDsComando();
+   ~CDsComando();	
+   virtual void ParseParam( LPCTSTR lpszParam, BOOL bFlag, BOOL bLast );
+//private:
+   CString m_exe;  // contiene la linea de comando completa
+   CString m_args; // contiene el parametro especifico de diagram (sucio: comillas etc, o no)
+};
+
+class CDsStdDlg;
+class CDsStdCtrl;
+class CDs9Window;
+class CMiSplit;
+class CDsImagen;
+
+class CMainLstW;
+extern CMainLstW *pMWnd ;
+
+typedef CMap< int ,int&, CDsStdDlg*, CDsStdDlg* > CStdDlgLst;
+typedef CMap< int ,int&, CDsStdCtrl*, CDsStdCtrl* > CStdControlLst;
+typedef CMap< int ,int&, CDsStdCtrl*, CDsStdCtrl* > CStdCtrlTecla;
+
+class CWTraza;
+class CDsHtml;
+
+/////////////////////////////////////////////////////////////////////////////
+// CDsxApp:
+// See diagramx.cpp for the implementation of this class
+//
+class CMenuBar;
+
+class CDsxApp : public CWinApp
+{
+   friend CDsxDoc;
+   friend CDsxView;
+   friend CDsxLeftView;
+   friend CDsxFrame;   
+   friend CDsSys;
+
+public:
+	CDsxApp();
+	~CDsxApp();	
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CDsxApp)
+	public:
+   virtual BOOL InitInstance();
+   virtual int ExitInstance();
+	virtual int Run();
+	virtual BOOL PreTranslateMessage(MSG* pMsg);
+	virtual BOOL OnCommand(WPARAM wParam, LPARAM lParam);   
+	//}}AFX_VIRTUAL
+
+// Implementation
+	COleTemplateServer *m_server;
+		// Server object for document creation
+	//{{AFX_MSG(CDsxApp)
+   afx_msg void OnAppAbout();
+   afx_msg void OnFilePrintSetup();
+		// NOTE - the ClassWizard will add and remove member functions here.
+		//    DO NOT EDIT what you see in these blocks of generated code !
+	//}}AFX_MSG
+	DECLARE_MESSAGE_MAP()
+private:
+   int m_FeatureVersion;
+   BOOL m_lowres;      
+   CDsComando m_LineaDeComando;
+
+#ifdef VISUALSTUDIO6
+   BOOL PumpMessageLocal();
+#endif
+
+   int m_dentro;   
+public:
+	void CargaFunciones();
+
+	BOOL BorraDeLaListaDirecta(int punto);
+
+	CString m_pFunciones[10]; /* Fijo de la 833 a la 842 inclusive */
+	CString m_dFunciones[10];
+
+	CString m_defaultfntcargado;
+	BOOL CargaFuentes(LPCSTR dirbas,LPCSTR apli = NULL);
+	CDsxView *m_iStdView;
+	CWnd *m_iStdParent;
+
+	CToolTipCtrl *m_tooltip;
+#ifdef DSPROFUIS
+	CExtMenuControlBar *m_MenuBar;
+#else
+	CMenuBar *m_MenuBar;
+#endif
+	
+	// Colores especiales y demas obtenidos del default.fnt
+	int m_aparienciabase; // modo basico de apariencia, default actual (2) "Office2007R1"
+	                      // 0 = Clasico (inicialmente no implementado)
+						  // 1 = Office2003
+						  // 2 = Office2007R1
+
+	CString m_aparienciafile;
+	BOOL m_fondosolido1;
+	BOOL m_colorset1;
+	BOOL m_colorset2;
+	BOOL m_colorset3;
+	BOOL m_colorset4;
+	BOOL m_colorset5;
+	BOOL m_colorset6;
+	BOOL m_colorset7;
+	BOOL m_colorset8;
+	BOOL m_colorset9;
+	COLORREF m_color1;
+	COLORREF m_color2;
+	COLORREF m_color3;
+	COLORREF m_color4;
+	COLORREF m_color5;
+	COLORREF m_color6;
+	COLORREF m_color7;
+	COLORREF m_color8;
+	COLORREF m_color9;
+	HBRUSH   m_colorbrush9;
+
+	COLORREF m_9color[10];
+	COLORREF m_9icolor[10];
+	COLORREF m_9fcolor[10];
+	
+	COLORREF m_9fondocampo; // fondo campo
+	COLORREF m_9textocampo; // texto campo
+	COLORREF m_9fondo; // fondo
+	COLORREF m_9texto;  // texto	
+	COLORREF m_9subrallado;
+	
+	int m_9ifont9campo;
+	int m_9ifont9texto;
+	int m_9ifont9rever;
+	int m_9ifont9inten;
+	int m_9ifont9mensa;
+	int m_9ifont9boton;
+	int m_9ifont9edita;
+
+	CString m_9skinfbmp[10];
+	int m_9skinfmodobmp[10];
+
+	CString m_9skinabmp[10];
+	int m_9skinamodobmp[10];
+
+	CString m_password;
+
+	// modo generico de los tab segun las posibilidades internas
+	int m_modotab1;
+	BOOL m_colorset_t1;
+	COLORREF m_color_t1[8];
+	int m_modotab2;
+	BOOL m_colorset_t2;
+	COLORREF m_color_t2[8];
+
+	BOOL m_colorset_t3;
+	COLORREF m_color_t3[8];
+
+	BOOL m_colorsettextab9;
+	COLORREF m_colortextab9;
+
+	// entrada
+	BOOL m_colorset_ce0;
+	COLORREF m_color_ce0[8];
+
+
+	BOOL m_conhint;
+
+	int m_nbotones;
+	class CUSBOTON
+	{
+	public:
+		int id;
+		COLORREF transparente;
+		CString path;
+	} m_botones[1024];
+	// Botones externos
+
+
+	int m_ifontboton;
+	int m_ifontgrid;
+	int m_ifontmemo;
+	int m_ifontcampo;
+	int m_ifontmemo2;
+
+    // Fuentes y sus colores intrinsicos
+	LOGFONT m_dfont[256];
+	COLORREF m_cf[256];
+	COLORREF m_cb[256];
+    // icono del frame
+	CString m_sicono;
+	//****************
+
+	BOOL m_Abierto;
+	BOOL m_Embebido;
+	BOOL m_bsolo10;
+
+	BOOL m_exports;
+
+	HWND m_SuperPadreHwnd;
+	HWND m_dlghwnd;
+	int GetDentro() {return m_dentro;}
+	BOOL SaltaFoco(int avance);
+	BOOL TeclaAlActivo(int tecla);
+	BOOL ActivacionPorDefecto(HWND oldw = NULL);
+   static BOOL ThereIsIE4();
+
+   BOOL m_enrun;
+
+   BOOL m_tooltips;
+
+   BOOL m_concaption;
+   BOOL m_haycontrolrmto;
+
+   CString m_nomstdmenu;
+   CString m_opcstdmenu;
+   CDsxLeftView * m_LeftView;
+   CDsxLeftView * m_UserMenu;   
+
+   CMiSplit *m_splitmenu;
+
+   CWTraza* m_pTraza;
+   int m_Limitacion;
+   int m_version;
+   int m_9version;
+   int m_rmtoversion;
+   CString m_PosExcel;
+   BOOL m_CabeceraExcel;
+   int m_CarsI;
+   BOOL m_AjustaImpre;
+   int m_LineasI;
+   LOGFONT m_FontI;
+   int m_MargenS;
+   int m_MargenI;
+   int m_MargenI2;
+   BOOL m_CrystalView;
+
+   BOOL m_pedidaimpresora;
+
+   DWORD m_dlgframe;
+   
+   CString m_midll;
+   CString m_midll9;
+   CString m_mimodulo;
+   
+   int GetFeatureVersion(void);
+   int edid(int id);
+   BOOL      m_hidehtml;
+   BOOL      m_usarweb;
+   BOOL      m_9usarweb;
+
+   CString   m_dirbase;
+
+   CString   m_9dirbase;
+
+   long m_numero_agisys;
+   long m_cambio_autorizado;
+
+   CDsSys *  m_dssys;
+
+   int m_runmode;
+   int m_ndisparocontrol;
+   int m_disparocontrol[171];
+   int m_ulttecla;
+   int m_hintcounter;
+   int m_ult_wid;
+   int m_ult_id;
+   int m_ult_sid;
+   int m_ult_wcid;
+   int m_ult_ctipo;
+
+   int m_hwnd_999;
+   Cid m_ult_cid;   
+
+   CDsHtml *m_phtml; // no lo destruye!! solo es el html corriente
+
+
+   CDsImagen *m_conexion;
+#ifdef DSPROFUIS
+   CExtEdit *m_mensa;
+#else
+   CEdit *m_mensa;
+#endif
+
+
+   CString m_url;
+
+   CDs9Window * m_9wnd;
+
+   CDs9Window * m_simul9;
+
+   CRect m_simul9r; 
+   
+
+   CDsStdCtrl * m_ctrlactivo;
+   CDsStdCtrl * m_antctrlactivo;
+
+   CDsxView *StdView(BOOL Parent = FALSE);
+
+   int m_Cur_Retro_Nivel;
+
+   CLIPFORMAT m_cMenuFormat;
+
+   BOOL m_superusuario;
+   BOOL m_oldf11;
+
+   BOOL m_avancelinea;
+
+   BOOL m_autocentrado;
+
+   int m_fgvid9;
+   int m_internalbuild9;
+   int m_fgvid;
+   int m_internalbuild;
+
+   char **m_listadirecta;
+   int m_nlistadirecta;
+
+   int m_noreenfocarpordefecto;
+
+   BOOL m_tabesreturn;
+
+   int m_dentropython;
+
+   BOOL m_minimizado;
+
+   int alt_excel;
+
+   POINT m_ultposlclick;
+   POINT m_ultposrclick;
+   POINT m_ultposldclick;
+   POINT m_ultposrdclick;
+
+   CString m_ayuda_url; /* no utilizado aunque lleva el valor de la ultima ayuda */
+   CString m_nomapli;
+   CString m_nomtab;
+
+   CStdCtrlTecla m_teclashortcuts;
+
+};
+
+extern CDsxApp theApp;
+extern CDsSys * pDsSys;
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
+
+#endif // !defined(AFX_DIAGRAMX_H__F1145F3A_5FE2_4615_9FA5_A6369AFBC5C7__INCLUDED_)

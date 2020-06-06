@@ -1,0 +1,31 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "dscrystalx"=.\dscrystalx.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {2A3A1C00-F9DB-11D3-808E-00A0C9DAC83F}
+    {C4847596-972C-11D0-9567-00A0C9273C2A}
+}}}
+
+###############################################################################
+

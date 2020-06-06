@@ -1,0 +1,42 @@
+// diagramx.odl : type library source for diagramx.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (diagramx.tlb).
+
+[ uuid(F2E28EC9-6E55-4776-9474-8090B9A9FC33), version(1.0) ]
+library Diagramx
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CDsxDoc
+	
+	[ uuid(1A2764C8-3127-430E-95F7-ED2A545C62EE) ]
+	dispinterface IDiagramx
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CDsxDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CDsxDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CDsxDoc
+	
+	[ uuid(712EA093-6417-4176-BB69-D2A70681A7D4) ]
+	coclass Document
+	{
+		[default] dispinterface IDiagramx;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

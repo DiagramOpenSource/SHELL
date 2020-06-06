@@ -1,0 +1,56 @@
+                                                                                
+                                                                          
+
+                   
+       
+       // _MSC_VER > 1000
+// ComboNavega.h : header file
+//
+
+/////////////////////////////////////////////////////////////////////////////
+// CComboNavega window
+
+                
+                                     
+     
+                                  
+      
+class CComboNavega : public CComboBox
+{
+// Construction
+public:
+	CComboNavega();
+
+// Attributes
+public:
+
+// Operations
+public:
+
+// Overrides
+	// ClassWizard generated virtual function overrides
+	//{{AFX_VIRTUAL(CComboNavega)
+	public:
+	virtual BOOL PreTranslateMessage(MSG* pMsg);
+	//}}AFX_VIRTUAL
+
+// Implementation
+public:
+	int Inserta(CString &s);
+	virtual ~CComboNavega();
+
+	// Generated message map functions
+protected:
+	//{{AFX_MSG(CComboNavega)
+	 void OnSelendok();
+	//}}AFX_MSG
+
+	
+};
+
+/////////////////////////////////////////////////////////////////////////////
+
+//{{AFX_INSERT_LOCATION}}
+// Microsoft Visual C++ will insert additional declarations immediately before the previous line.
+
+       // !defined(AFX_COMBONAVEGA_H__8FC875D6_C292_11D3_B2F4_004F4905CBCF__INCLUDED_)

@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: wcmfc32 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\debug/Wcmfcres.res" /d "_DEBUG" /d "_AFXDLL" "C:\fgv\proyectos\grid_x\Wcmfcres.rc"" 
+Creating temporary file "W:\TEMP\RSPF4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "WCMFCLIB" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /Fp".\debug/Wcmfc32.pch" /Yu"stdafx.h" /Fo".\debug/" /Fd".\debug/" /FD /c 
+"C:\fgv\proyectos\grid_x\Basegrid.cpp"
+"C:\fgv\proyectos\grid_x\Bmcell.cpp"
+"C:\fgv\proyectos\grid_x\Cell.cpp"
+"C:\fgv\proyectos\grid_x\Cellarra.cpp"
+"C:\fgv\proyectos\grid_x\Cellgrid.cpp"
+"C:\fgv\proyectos\grid_x\Cellindi.cpp"
+"C:\fgv\proyectos\grid_x\Cellmatr.cpp"
+"C:\fgv\proyectos\grid_x\Cellrang.cpp"
+"C:\fgv\proyectos\grid_x\Colorbut.cpp"
+"C:\fgv\proyectos\grid_x\Colorpag.cpp"
+"C:\fgv\proyectos\grid_x\Ctxtcell.cpp"
+"C:\fgv\proyectos\grid_x\Fontpage.cpp"
+"C:\fgv\proyectos\grid_x\Libmain.cpp"
+"C:\fgv\proyectos\grid_x\Rtxtcell.cpp"
+"C:\fgv\proyectos\grid_x\Textcell.cpp"
+]
+Creating command line "cl.exe @W:\TEMP\RSPF4.tmp" 
+Creating temporary file "W:\TEMP\RSPF5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "WCMFCLIB" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /Fp".\debug/Wcmfc32.pch" /Yc"stdafx.h" /Fo".\debug/" /Fd".\debug/" /FD /c 
+"C:\fgv\proyectos\grid_x\Stdafx.cpp"
+]
+Creating command line "cl.exe @W:\TEMP\RSPF5.tmp" 
+Creating temporary file "W:\TEMP\RSPF6.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\debug/Wcmfc32.pdb" /debug /machine:I386 /def:".\wcmfc32.def" /out:"..\debug/Wcmfc32.dll" /implib:"..\debug/Wcmfc32.lib" 
+.\debug\Basegrid.obj
+.\debug\Bmcell.obj
+.\debug\Cell.obj
+.\debug\Cellarra.obj
+.\debug\Cellgrid.obj
+.\debug\Cellindi.obj
+.\debug\Cellmatr.obj
+.\debug\Cellrang.obj
+.\debug\Colorbut.obj
+.\debug\Colorpag.obj
+.\debug\Ctxtcell.obj
+.\debug\Fontpage.obj
+.\debug\Libmain.obj
+.\debug\Rtxtcell.obj
+.\debug\Stdafx.obj
+.\debug\Textcell.obj
+.\debug\Wcmfcres.res
+]
+Creating command line "link.exe @W:\TEMP\RSPF6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Stdafx.cpp
+Compiling...
+Basegrid.cpp
+Bmcell.cpp
+Cell.cpp
+Cellarra.cpp
+Cellgrid.cpp
+Cellindi.cpp
+Cellmatr.cpp
+Cellrang.cpp
+Colorbut.cpp
+Colorpag.cpp
+Ctxtcell.cpp
+Fontpage.cpp
+Libmain.cpp
+Rtxtcell.cpp
+Textcell.cpp
+Generating Code...
+Linking...
+   Creating library ..\debug/Wcmfc32.lib and object ..\debug/Wcmfc32.exp
+
+
+
+<h3>Results</h3>
+Wcmfc32.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
